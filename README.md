@@ -1,1 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/IwCr_2o0)
+Instruktioner (t.ex. en README.md i assets-mappen) till den kodande gruppen. Om t.ex. en knapp har ett hover-state eller något är tänkt att animeras, kan ni nämna det här. 💡 Tips är att föra logg under designprocessen i denna fil. Har ni gjort designen så att det går att dela en länk till den, lägg gärna länken här.
+
+I README.md i "roten" på projektet lägger ni till en rubrik som heter About the design (eller på svenska, om ni föredrar det). Skriv en kort motivering (max 500 ord) kring hur ni gjort era designval, t.ex. val av färger, typsnitt, form på knappar, menyn, osv. Som en bakgrundsinformation.
