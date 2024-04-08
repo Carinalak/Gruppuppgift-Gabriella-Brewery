@@ -78,7 +78,7 @@ Projekt + issues som vi sätter upp tillsammans. En issue om dagen, minst.
 
 ### Hur ser vår tidsplan ut, vad har vi för milstolpar och hur hanterar vi om vi märker att vi hamnar efter/före i planeringen?
 
-• 2 dagars sprits från och med dagen efter överlämning.
-• Retrospective på fredagar.
-• Pratar igenom det på gruppmötet och delar ut issues på ett nytt sätt om vi sackar efter.
-• Om vi är jättesnabba så har vi ett möte om nya förväntningar INNAN vi lägger till massa extra ting.
+- 2 dagars sprits från och med dagen efter överlämning.
+- Retrospective på fredagar.
+- Pratar igenom det på gruppmötet och delar ut issues på ett nytt sätt om vi sackar efter.
+- Om vi är jättesnabba så har vi ett möte om nya förväntningar INNAN vi lägger till massa extra ting.
