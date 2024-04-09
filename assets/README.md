@@ -16,3 +16,6 @@ Meny
 
 Bildspel "Our café picks"
 - Bildspel som växlar mellan de bilder som finns i /assets/images/slideshow
+- Varje bild har en specifik text som hör till, alltså när bilden ändras, ska tillhörande text visas.
+    - Länk till Bildspel i mobil animation version: https://codepen.io/supah/full/yePzKO
+    - Länk till Bildspel animation i tablet/desktop version: https://codepen.io/tym0/pen/KwrOKX
