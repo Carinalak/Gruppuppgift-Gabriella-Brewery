@@ -1,7 +1,8 @@
-### Animationer
+### Liknande animationer från Codepen
 - Logo shrinking upon scroll animation: https://codepen.io/snorkltv/pen/gOoaoYL
 - Länk till Bildspel i mobil animation version: https://codepen.io/supah/full/yePzKO
 - Länk till Bildspel animation i tablet/desktop version: https://codepen.io/tym0/pen/KwrOKX
+- Länk till böne-snurr vid hover: https://codepen.io/Juanpufff/pen/XWQqRZr
 
 ### Kaffebönor
 - De tre bönorna snurrar ett varv vid hover
