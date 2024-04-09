@@ -24,3 +24,6 @@
 ### Grid
 Se grid för marginaler, se även de olika elementen för eventuella redan inlagda marginaler.
 
+### Figma
+https://www.figma.com/file/r7RtpL1Hhd7Heyqs8lVlC0/Brewing-Coffee---Gabriella-Grupparbete?type=design&node-id=0%3A1&mode=design&t=Fn4AKqs5jKxej5yN-1
+Ni finner alla olika hoverstates och mer instruktioner till animationer i figma skissen. 
