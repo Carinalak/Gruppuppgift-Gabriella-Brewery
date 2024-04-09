@@ -7,3 +7,8 @@ Vårt designspråk är en hyllning till konsten att brygga kaffe tillsammans med
 Med mjuka jordfärger hämtade från naturen och subtila kontraster skapar vi en visuell palett som är både lugnande och inspirerande. Vår design är ren och enkel, med en tydlig fokus på användarvänlighet och tillgänglighet.
 
 Kaffebryggning är en konstform i sig och vi har valt att integrera visuella element som förstärker den kreativa och hantverksmässiga känslan. Från vackra fotografier av kaffebönor och bryggutrustning till subtila animationer som ger liv åt sidan. Vi vill inpsipera användaren till att fördjupa sig i sin kärlek till kaffe och till att skapa sina egna kaffemästerverk hemma.
+
+Länk till Figma: 
+https://www.figma.com/file/r7RtpL1Hhd7Heyqs8lVlC0/Brewing-Coffee---Gabriella-Grupparbete?type=design&node-id=0%3A1&mode=design&t=Fn4AKqs5jKxej5yN-1
+
+Ni finner alla olika hoverstates och instruktioner till animationer i figma skissen. 
