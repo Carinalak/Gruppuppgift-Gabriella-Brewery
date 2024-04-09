@@ -14,5 +14,5 @@ Kaffekort
 Meny
 - Vid klick på kaffebönorna glider menyn in från höger till vänster. Se procentuell täckning för de olika layouterna i Figma.
 
-Bildspel "Our café picks
+Bildspel "Our café picks"
 - Bildspel som växlar mellan de bilder som finns i /assets/images/slideshow
