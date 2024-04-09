@@ -4,20 +4,6 @@
 
 Alla möten på Teams, kameran på.
 
-#### Schemat:
-
-| Mån | Tis | Ons               | Tors | Fre          |
-| --- | --- | ----------------- | ---- | ------------ |
-| X   | X   | 10–12, Intro möte | 9–12 | 13–16, Retro |
-
-| Mån                     | Tis                             | Ons            | Tors                  | Fre        |
-| ----------------------- | ------------------------------- | -------------- | --------------------- | ---------- |
-| 10–13, Lämna till Jenni | 10–13, boka tid för överlämning | Överlämning x2 | 9–12, sprint 1 + plan | ???, Retro |
-
-| Mån           | Tis | Ons           | Tors | Fre                 |
-| ------------- | --- | ------------- | ---- | ------------------- |
-| ???, sprint 2 | ??? | ???, sprint 3 | ???  | Redovisning, 10 min |
-
 ### Hur jobbar vi?
 
 Jobbar helst ensamma med issues, var och tar ansvar för att säga till i tid om man fastnar och behöver hjälp. När det kommer till att rensa upp / koppla ihop koden efter merges så kan vi göra det tillsammans i slutet av mötet v.b.
