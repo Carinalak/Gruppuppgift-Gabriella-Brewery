@@ -2,7 +2,7 @@ Instruktioner (t.ex. en README.md i assets-mappen) till den kodande gruppen. Om 
 
 I README.md i "roten" på projektet lägger ni till en rubrik som heter About the design (eller på svenska, om ni föredrar det). Skriv en kort motivering (max 500 ord) kring hur ni gjort era designval, t.ex. val av färger, typsnitt, form på knappar, menyn, osv. Som en bakgrundsinformation.
 
-#About the design
+# About the design
 
 Vårt designspråk är en hyllning till konsten att brygga kaffe tillsammans med den varma, inbjudande känslan av att vara hemma. Vi strävar efter att skapa en atmosfär som balanserar mellan det jordnära och det förfinade, där varje detalj är noggrant utformad för att förmedla en känsla av avslappnad lyx.
 
