@@ -1,4 +1,5 @@
 @import '../vendor/normalize';
+@import 'desktop';
 
 @media (max-width: 600px) {
     @import 'mobile';
