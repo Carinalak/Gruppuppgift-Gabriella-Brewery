@@ -1,3 +1,64 @@
 body {
-    background-color: black;
+    background-color: white;
+}
+/* ****************    MENU   **************** */
+.menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F8E9D6;
+    display: none;
+}
+
+.menu-button {
+    height: 100px;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    /* KOD FÖR ATT GÖMMA KNAPP
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    */
+}
+
+.menu-button-beans {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-flexbox {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-top: 3.5rem;
+    padding-left: 1.25rem;
+    font-size: 4rem;
+}
+
+.menu-anchor {
+    padding-left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.menu-kitty {
+    position: fixed;
+    overflow: hidden;
+    bottom: -7px;
+    right: -30px;
+    padding-left: 20px;
+}
+
+.menu-visible {
+    display: block;
 }
