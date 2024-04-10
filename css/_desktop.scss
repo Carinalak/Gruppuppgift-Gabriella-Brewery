@@ -2,6 +2,24 @@ body {
     background-color: #312418;
 }
 
+/* ****************   ABOUT BEAN SECTION  **************** */
+
+.about-beans-heading {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #F8E9D6;
+}
+
+.about-beans-paragraph {
+    font-family: 'Cormorant', sans-serif;
+    font-size: 16px;
+    color: #F8E9D6;
+    line-height: 20px;
+}
+
+/* ****************   FLIP CARD SECTION  **************** */
+
 .flip-card-container {
     display: inline-block;
     position: relative;
