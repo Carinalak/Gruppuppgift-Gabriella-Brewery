@@ -1,12 +1,35 @@
 body {
-    background-color: black;
+    background-color: white;
 }
 /* ****************    MENU   **************** */
 .menu {
     width: 100vw;
     height: 100vh;
     background-color: #F8E9D6;
-    display: block; //ska vara none här
+    display: none;
+}
+
+.menu-button {
+    height: 100px;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    /* KOD FÖR ATT GÖMMA KNAPP
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    */
+}
+
+.menu-button-beans {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .menu-flexbox {
@@ -34,4 +57,8 @@ body {
     bottom: -7px;
     right: -30px;
     padding-left: 20px;
+}
+
+.menu-visible {
+    display: block;
 }
