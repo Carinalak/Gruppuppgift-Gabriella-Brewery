@@ -1,12 +1,25 @@
 body {
     background-color: black;
 }
+/* ****************    MENU   **************** */
+.menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F8E9D6;
+}
 
 .menu-flexbox {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding-top: 3.5rem;
-    padding-left: 0.3125rem;
+    padding-left: 1.25rem;
     font-size: 4rem;
+}
+
+.menu-anchor {
+    padding-left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
 }
