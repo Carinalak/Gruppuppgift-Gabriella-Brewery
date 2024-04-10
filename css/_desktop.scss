@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #312418;
 }
 
 .flip-card-container {
@@ -7,7 +7,8 @@ body {
     position: relative;
     width: 310px;
     height: 350px;
-    margin: 40px 0;
+    margin-bottom: 42px;
+    margin-top: 10px;
     perspective: 600px;
 }
 
@@ -29,23 +30,16 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    line-height: 260px;
     color: white;
     text-align: center;
-    font-weight: bold;
-    font-size: 40px;
     backface-visibility: hidden;
     border-radius: 2rem;
+
 }
 
 .card-content-front {
     background-color: #142815;
-    box-shadow: 0 0 5px 2px rgba(50, 50, 50);
-}
-
-.card-content-back {
-    background-color: #9E7147;
-    transform: rotateY(180deg);
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0);
 }
 
 .front-card-image {
@@ -55,7 +49,7 @@ body {
     height: 240px;
     object-fit: cover;
     position: absolute; 
-    top: 50%; 
+    top: 52%; 
     left: 50%; 
     transform: translate(-50%, -35%);
 
@@ -63,9 +57,69 @@ body {
 
 .front-card-heading {
     position: absolute;
-    top: -35%; 
+    top: -3%; 
     left: 50%;
     transform: translateX(-50%);
-    font-weight: bold;
     font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #F8E9D6;
+}
+
+.flip-card-arrows {
+    position: absolute;
+    top: 88%; 
+    right: 5%;
+    width: 25px;
+    height: 23px;
+
+}
+
+.card-content-back {
+    background-color: #9E7147;
+    transform: rotateY(180deg);
+}
+
+
+.back-card-heading,
+.back-card-information,
+.flip-card-button {
+    position: absolute;
+}
+
+.back-card-heading {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: #F8E9D6;;
+}
+
+.back-card-information {
+    font-family: 'Cormorant', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    width: 240px;
+    top: 20%; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flip-card-button {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    top: 80%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 48px;
+    border-radius: 20px;
+    background-color: #F8E9D6;
+    border: 0;
+    color: #312418;
+    cursor: pointer;
 }

@@ -1,6 +1,3 @@
-body {
-    background-color: white;
-}
 /* ****************    MENU   **************** */
 .menu {
     width: 100vw;
@@ -61,4 +58,13 @@ body {
 
 .menu-visible {
     display: block;
+}
+
+/* ****************    FLIP CARDS  **************** */
+
+.flip-card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
