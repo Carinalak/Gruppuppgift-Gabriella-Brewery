@@ -6,12 +6,13 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #F8E9D6;
+    display: block; //ska vara none här
 }
 
 .menu-flexbox {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 4rem;
     padding-top: 3.5rem;
     padding-left: 1.25rem;
     font-size: 4rem;
@@ -22,4 +23,15 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.menu-kitty {
+    position: fixed;
+    overflow: hidden;
+    bottom: -7px;
+    right: -30px;
+    padding-left: 20px;
 }
