@@ -218,3 +218,36 @@ footer h3 {
         padding-bottom: 30px;
     }
 }
+/* ****************    BREWING METHODS SECTION   **************** */
+
+.brewing-methods-section {
+    display: flex;
+    flex-direction: column;
+    width: 389px;
+    margin: 15px;
+}
+
+.brewing-methods-heading {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.method-container {
+    width: 388px;
+}
+
+.aeropress {
+    margin-top: 0;
+}
+
+.method-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.method-image {
+    align-items: center;
+}
+
+
