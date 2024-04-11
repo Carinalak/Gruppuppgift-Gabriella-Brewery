@@ -48,8 +48,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function updateDots() {
-        const dots = document.querySelectorAll(".dot");
-        dots.forEach(dot => dot.classList.remove("active"));
+        const dots = slides[currentSlide].querySelectorAll(".dot");
+        const allDots = document.querySelectorAll(".dot");
+        allDots.forEach(dot => dot.classList.remove("active"));
         dots[currentSlide].classList.add("active");       
     }
 
