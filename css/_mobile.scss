@@ -9,10 +9,7 @@ body {
     position: relative;
     h2 {
         color: white;
-        font-family: "Raleway";
-        text-transform: uppercase;
         font-weight: 300;
-        font-size: 2rem;
         text-align: center;
     }
 
@@ -76,4 +73,145 @@ body {
     }
 }
 
+/* ****************    MENU   **************** */
+.menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F8E9D6;
+    display: none;
+}
 
+.menu-button {
+    height: 100px;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    /* KOD FÖR ATT GÖMMA KNAPP
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    */
+}
+
+.menu-button-beans {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-flexbox {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-top: 3.5rem;
+    padding-left: 1.25rem;
+    font-size: 4rem;
+}
+
+.menu-anchor {
+    padding-left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.menu-kitty {
+    position: fixed;
+    overflow: hidden;
+    bottom: -7px;
+    right: -30px;
+    padding-left: 20px;
+}
+
+.menu-visible {
+    display: block;
+}
+
+/* ****************  FOOTER   **************** */
+footer {
+    background-color: #142815;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h3 {
+    color: #F8E9D6;
+}
+.signup-text {
+    width: 350px;
+    font-family: "Cormorant SC", serif;
+    font-size: 16px;
+}
+.subscribe-input {
+    border-radius: 20px;
+    border: 2px solid #F8E9D6;
+    padding: 10px; 
+    background-color: #142815;
+    color: #F8E9D6; 
+    outline: none;
+}
+.subscribe-input::placeholder {
+    color: #F8E9D6;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+.subscribe-form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+.footer-menu {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-menu a {
+    color: #F8E9D6;
+}
+
+/* ****************   ABOUT BEAN SECTION  **************** */
+
+.about-beans-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.about-beans-container {
+    width: 388px;
+    height: 276px;
+    margin-bottom: 34px;
+}
+
+.about-beans-heading {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.about-beans-paragraph2 {
+    margin-top: 10px;
+}
+
+/* ****************   FLIP CARDS SECTION  **************** */
+
+.flip-card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
