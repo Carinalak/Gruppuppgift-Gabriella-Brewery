@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", function() {
     function nextSlide() {
         currentSlide = (currentSlide + 1) % slides.length;
         showSlide(currentSlide);
-        updateDots();
+        updateDots();   
     }
 
     function prevSlide() {
-        currentSlide = (currentSlide - 1) % slides.length;
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         showSlide(currentSlide);
         updateDots();
     }
@@ -24,14 +24,14 @@ document.addEventListener("DOMContentLoaded", function() {
     function updateDots() {
         const dots = document.querySelectorAll(".dot");
         dots.forEach(dot => dot.classList.remove("active"));
-        dots[currentSlide].classList.add("active");
+        dots[currentSlide].classList.add("active");       
     }
 
-    document.getElementById('slideshow').addEventListener('touchstart', function(event) {
+    document.querySelector('#slideshow').addEventListener('touchstart', function(event) {
         touchstartX = event.changedTouches[0].screenX;
     }, false);
 
-    document.getElementById('slideshow').addEventListener('touchend', function(event) {
+    document.querySelector('#slideshow').addEventListener('touchend', function(event) {
         touchendX = event.changedTouches[0].screenX;
         handleGesture();
     }, false);
