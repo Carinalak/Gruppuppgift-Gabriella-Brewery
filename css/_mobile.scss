@@ -135,6 +135,68 @@ body {
     display: block;
 }
 
+/* ****************   THE BREWERY CLUB SECTION  **************** */
+
+.brewery-club-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.brewery-club-container {
+    width: 388px;
+    height: 276px;
+    margin-bottom: 34px;
+}
+.brewery-club-heading-white {
+    color: #FFFFFF;
+    font-size: 48px;
+}
+.brewery-club-heading-beige {
+    color: #F8E9D6;
+    font-size: 48px;
+}
+.brewery-club-heading-both {
+    text-align: center;
+}
+.book-image {
+    width: 300px;
+}
+
+/* ****************   ABOUT BEAN SECTION  **************** */
+
+.about-beans-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.about-beans-container {
+    width: 388px;
+    height: 276px;
+    margin-bottom: 34px;
+}
+
+.about-beans-heading {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.about-beans-paragraph2 {
+    margin-top: 10px;
+}
+
+/* ****************   FLIP CARDS SECTION  **************** */
+
+.flip-card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* ****************  FOOTER   **************** */
 footer {
     background-color: #142815;
@@ -180,38 +242,4 @@ footer h3 {
 }
 .footer-menu a {
     color: #F8E9D6;
-}
-
-/* ****************   ABOUT BEAN SECTION  **************** */
-
-.about-beans-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.about-beans-container {
-    width: 388px;
-    height: 276px;
-    margin-bottom: 34px;
-}
-
-.about-beans-heading {
-    font-size: 40px;
-    margin-bottom: 40px;
-}
-
-.about-beans-paragraph2 {
-    margin-top: 10px;
-}
-
-/* ****************   FLIP CARDS SECTION  **************** */
-
-.flip-card-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
