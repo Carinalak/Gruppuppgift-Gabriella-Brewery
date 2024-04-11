@@ -63,6 +63,40 @@ body {
     display: block;
 }
 
+/* ****************   ABOUT BEAN SECTION  **************** */
+
+.about-beans-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.about-beans-container {
+    width: 388px;
+    height: 276px;
+    margin-bottom: 34px;
+}
+
+.about-beans-heading {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.about-beans-paragraph2 {
+    margin-top: 10px;
+}
+
+/* ****************   FLIP CARDS SECTION  **************** */
+
+.flip-card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ****************    BREWING METHODS SECTION   **************** */
 
 .brewing-methods-section {
