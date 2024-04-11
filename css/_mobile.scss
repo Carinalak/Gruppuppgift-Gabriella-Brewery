@@ -179,6 +179,9 @@ footer h3 {
                 object-fit: cover;
             }
             .dots {
+                background-color: rgba(255, 255, 255, 0.564);
+                border-radius: 20px;
+                padding: 1.5px;
                 position: absolute;
                 bottom: 10px;
                 left: 50%;
@@ -191,15 +194,16 @@ footer h3 {
                 z-index: 1;
                 .dot {
                     cursor: pointer;
-                    height: 15px;
-                    width: 15px;
+                    height: 10px;
+                    width: 10px;
                     margin: 0 2px;
-                    background-color: #000000;
+                    background-color: rgba(0, 0, 0, 0.804);
+                    border: solid 2px rgba(0, 0, 0, 0.747);
                     border-radius: 50%;
                     transition: background-color 0.6s ease;
                 }
                 .active {
-                    background-color: white; 
+                    background-color: rgba(255, 255, 255, 0.623); 
                 }
             }
         }    
