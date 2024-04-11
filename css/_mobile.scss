@@ -158,7 +158,6 @@ footer h3 {
         font-weight: 300;
         text-align: center;
     }
-
     .slide {
         display: none; 
         width: 100%;
@@ -170,7 +169,7 @@ footer h3 {
             border-radius: 5px;
             margin: 0 auto;
             margin: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             position: relative;
             img {
                 position: absolute;
@@ -216,9 +215,6 @@ footer h3 {
         background-color: #9E7147;
         border-radius: 20px;
         margin: 20px;
-
-        h3 {
-            font-weight: bold;
-        }
+        padding-bottom: 30px;
     }
 }
