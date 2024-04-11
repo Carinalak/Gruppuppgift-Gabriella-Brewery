@@ -1,3 +1,23 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 72px;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
 /* ****************    MENU   **************** */
 .menu {
     width: 100vw;
@@ -58,6 +78,53 @@
 
 .menu-visible {
     display: block;
+}
+
+/* ****************  FOOTER   **************** */
+footer {
+    background-color: #142815;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h3 {
+    color: #F8E9D6;
+}
+.signup-text {
+    width: 350px;
+    font-family: "Cormorant SC", serif;
+    font-size: 16px;
+}
+.subscribe-input {
+    border-radius: 20px;
+    border: 2px solid #F8E9D6;
+    padding: 10px; 
+    background-color: #142815;
+    color: #F8E9D6; 
+    outline: none;
+}
+.subscribe-input::placeholder {
+    color: #F8E9D6;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+.subscribe-form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+.footer-menu {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-menu a {
+    color: #F8E9D6;
 }
 
 /* ****************   ABOUT BEAN SECTION  **************** */
