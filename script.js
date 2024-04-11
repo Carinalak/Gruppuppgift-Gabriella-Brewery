@@ -1,3 +1,29 @@
+//MENU
+
+let menuBtn = document.getElementById('menuBtn');
+const menu = document.getElementById('menu');
+
+menuBtn.addEventListener('click', toggleDisplay);
+
+function toggleDisplay() {
+
+    menu.classList.toggle('menu-visible');
+
+  }
+
+
+//feature to be able to flip the coffee cards
+  let cards = document.querySelectorAll('.flip-card');
+
+[...cards].forEach((card)=>{
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped');
+  });
+});
+
+
+// SLIDESHOW - OUR CAFÉ PICKS SECTION
+
 document.addEventListener("DOMContentLoaded", function() {
     const slides = document.querySelectorAll(".slide");
     let currentSlide = 0;
@@ -22,8 +48,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function updateDots() {
-        const dots = document.querySelectorAll(".dot");
-        dots.forEach(dot => dot.classList.remove("active"));
+        const dots = slides[currentSlide].querySelectorAll(".dot");
+        const allDots = document.querySelectorAll(".dot");
+        allDots.forEach(dot => dot.classList.remove("active"));
         dots[currentSlide].classList.add("active");       
     }
 
@@ -46,28 +73,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     updateDots();
     showSlide(currentSlide);
-});
-
-//MENU
-
-let menuBtn = document.getElementById('menuBtn');
-const menu = document.getElementById('menu');
-
-menuBtn.addEventListener('click', toggleDisplay);
-
-function toggleDisplay() {
-
-    menu.classList.toggle('menu-visible');
-
-  }
-
-
-//feature to be able to flip the coffee cards
-  let cards = document.querySelectorAll('.flip-card');
-
-[...cards].forEach((card)=>{
-  card.addEventListener( 'click', function() {
-    card.classList.toggle('is-flipped');
-  });
 });
 
