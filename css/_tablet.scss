@@ -30,10 +30,31 @@ body {
 
 .about-beans-section {
     grid-column: span 4;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.about-beans-heading {
+    margin-bottom: 64px;
 }
 
 .flip-card-section {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-column: span 4;
+    gap: 40px;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.flip-card-container:first-child {
+    margin-top: 10px;
+}
+
+.flip-card-container {
+    grid-column: span 2;
+    justify-self: center;
+    align-self: center;
 }
 
 .brewing-methods-section {
