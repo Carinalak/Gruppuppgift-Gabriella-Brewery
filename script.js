@@ -75,3 +75,19 @@ document.addEventListener("DOMContentLoaded", function() {
     showSlide(currentSlide);
 });
 
+// Subscribe - button:
+const inputField = document.querySelector('.subscribe-input');
+const subscribeBtn = document.querySelector('.subscribe-btn');
+
+
+inputField.addEventListener('input', function() {
+
+    if (inputField.value.trim() !== '') {
+        subscribeBtn.disabled = false;
+        subscribeBtn.style.opacity = '1';
+    } else {
+        subscribeBtn.disabled = true;
+        subscribeBtn.style.opacity = '0.5';
+    }
+});
+
