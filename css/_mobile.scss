@@ -72,27 +72,36 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .brewery-club-container {
-    width: 388px;
+    width: 100%;
     margin-bottom: 0;
 }
 
 .brewery-club-heading-white {
     color: #FFFFFF;
     font-size: 48px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .brewery-club-heading-beige {
     color: #F8E9D6;
     font-size: 48px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .book-image {
     width: 380px;
 }
 
+.brewery-club-info-container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 .brewery-club-paragraph{
     color: #FFFFFF;
@@ -105,13 +114,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    width: 100%;
 }
 
 .about-beans-container {
-    width: 388px;
-    height: 276px;
-    margin-bottom: 34px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .about-beans-heading {
@@ -132,42 +140,51 @@ body {
     align-items: center;
 }
 
-/* ****************   ABOUT BEAN SECTION  **************** */
 
-.about-beans-section {
+/* ****************    BREWING METHODS SECTION   **************** */
+
+.brewing-methods-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
+    width: 100%;
 }
 
-.about-beans-container {
-    width: 388px;
-    height: 276px;
-    margin-bottom: 34px;
-}
-
-.about-beans-heading {
+.brewing-methods-heading {
     font-size: 40px;
     margin-bottom: 40px;
 }
 
-.about-beans-paragraph2 {
-    margin-top: 10px;
+.method-container {
+    width: 100%;
 }
 
-/* ****************   FLIP CARDS SECTION  **************** */
+.brewing-methods-heading,
+.aeropress,
+.method-heading {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-.flip-card-section {
+.aeropress {
+    margin-top: 0;
+}
+
+.method-image-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* ************* SLIDESHOW - OUR CAFÉ PICKS SECTION ********* */
+.method-image {
+    align-items: center;
+}
 
+.information-container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* ************* SLIDESHOW - OUR CAFÉ PICKS SECTION ********* */
 
 .slideshow {
     max-width: 100%;
@@ -239,37 +256,6 @@ body {
         margin: 20px;
         padding-bottom: 30px;
     }
-}
-/* ****************    BREWING METHODS SECTION   **************** */
-
-.brewing-methods-section {
-    display: flex;
-    flex-direction: column;
-    width: 389px;
-    margin: 15px;
-}
-
-.brewing-methods-heading {
-    font-size: 40px;
-    margin-bottom: 40px;
-}
-
-.method-container {
-    width: 388px;
-}
-
-.aeropress {
-    margin-top: 0;
-}
-
-.method-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.method-image {
-    align-items: center;
 }
 
 /* ****************  FOOTER   **************** */
