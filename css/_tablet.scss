@@ -58,7 +58,42 @@ body {
 }
 
 .brewing-methods-section {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-column: span 4;
+}
+
+.method-container {
+    display: grid;
+    grid-column: span 4;
+    margin-left: 23px;
+    margin-right: 23px;
+
+}
+
+.method-image-container {
+    display: grid;
+    justify-content: flex-start;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+}
+
+.information-container {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    align-self: center;
+    padding-right: 23px;
+}
+
+.method-image {
+    width: 385px;
+    height: 350px;
+}
+
+
+.aeropress {
+    margin-left: 0;
 }
 
 .slideshow {
