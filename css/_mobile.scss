@@ -76,8 +76,7 @@ body {
 
 .brewery-club-container {
     width: 388px;
-    height: 276px;
-    margin-bottom: 34px;
+    margin-bottom: 0;
 }
 
 .brewery-club-heading-white {
@@ -90,14 +89,10 @@ body {
     font-size: 48px;
 }
 
-.brewery-club-heading-both {
-    text-align: center;
-}
-
 .book-image {
     width: 380px;
-    margin-top: 90px;
 }
+
 
 .brewery-club-paragraph{
     color: #FFFFFF;
@@ -122,6 +117,7 @@ body {
 .about-beans-heading {
     font-size: 40px;
     margin-bottom: 40px;
+    margin-top: 0;
 }
 
 .about-beans-paragraph2 {
