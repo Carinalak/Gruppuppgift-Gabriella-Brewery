@@ -334,11 +334,19 @@ footer h3 {
     text-align: center;
     padding: 0;
 }
+
 .footer-menu-links li {
     line-height: 3;
     color: #F8E9D6;
 }
+
 .change-to-lowercase {
     text-transform: lowercase;
     color: #F8E9D6;
+}
+
+.copyright-text {
+    text-transform: lowercase;
+    color: #F8E9D6;
+    padding-top: 50px;
 }
