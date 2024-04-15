@@ -1,3 +1,5 @@
+
+
 body {
     display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -10,6 +12,10 @@ body {
 
 .menu {
     grid-column: span 4;
+}
+
+.brewing-methods-heading {
+    color: #F8E9D6;
 }
 
 .brewery-club-section {
@@ -28,15 +34,30 @@ body {
     width: 100%;
 }
 
-.about-beans-section {
-    grid-column: span 4;
-    margin-left: 23px;
-    margin-right: 23px;
+
+/* ------------------- ABOUT THE BEANS SECTION -------------------- */
+
+.about-beans-container {
+    grid-column: 1 / span 4;
+    margin: 0;
 }
 
 .about-beans-heading {
     margin-bottom: 64px;
+    color: #F8E9D6;
 }
+
+.about-beans-paragraph {
+    color: #F8E9D6;;
+}
+
+.about-beans-paragraph2 {
+    margin-top: 10px;
+    color: #F8E9D6;
+}
+
+
+/* ------------------- FLIP CARD SECTION -------------------- */
 
 .flip-card-section {
     display: grid;
@@ -45,6 +66,109 @@ body {
     gap: 40px;
     margin-left: 23px;
     margin-right: 23px;
+}
+
+
+.flip-card-container {
+    display: inline-block;
+    position: relative;
+    width: 310px;
+    height: 350px;
+    margin-bottom: 42px;
+    margin-top: 10px;
+    perspective: 600px;
+}
+
+.flip-card-container:first-child {
+    margin-top: 50px;
+}
+
+.flip-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+}
+
+.flip-card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 2rem;
+
+}
+
+.card-content-front {
+    background-color: #142815;
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0);
+}
+
+.front-card-image {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    position: absolute; 
+    top: 52%; 
+    left: 50%; 
+    transform: translate(-50%, -35%);
+
+}
+
+.front-card-heading {
+    position: absolute;
+    top: -3%; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: #F8E9D6;
+}
+
+.flip-card-arrows {
+    position: absolute;
+    top: 88%; 
+    right: 5%;
+    width: 25px;
+    height: 23px;
+
+}
+
+.card-content-back {
+    background-color: #9E7147;
+    transform: rotateY(180deg);
+}
+
+
+.back-card-heading,
+.back-card-information,
+.flip-card-button {
+    position: absolute;
+}
+
+.back-card-heading {
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: #F8E9D6;;
+}
+
+.back-card-information {
+    line-height: 20px;
+    width: 240px;
+    top: 20%; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
 }
 
 .flip-card-container:first-child {
@@ -61,11 +185,27 @@ body {
     grid-column: span 4;
 }
 
+/* ------------------- BREWING METHODS SECTION ----------------- */
+
+.method-information, .method-subheading {
+    color: #f8e9d6;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
 /* ------------------- SLIDESHOW -------------------- */
 
 .slideshow {
     grid-column: span 4;
-    max-width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    width: 100%; max-width: 100%;
     overflow: hidden;
     margin: auto;
     position: relative;
@@ -106,8 +246,50 @@ body {
 }
 
 
-/* ------------------- FOOTER ----------------------- */
+/* *********************  FOOTER   ********************* */
 
 footer {
     grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px; 
+}
+.footer-grid-section-left {
+    grid-row: 1;
+    grid-column: 1 / span 2; 
+    display: grid;
+    place-items: left;
+    margin-left: 20px;
+}
+.footer-grid-section-left h3 {
+    text-align: left; 
+}
+.subscribe-form {
+    width: 290px;
+}
+.subscribe-input-position {
+   margin-left: 0;
+}
+.footer-grid-section-right {
+    grid-row: 1;
+    grid-column: 3 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.footer-menu-container {
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+}
+.footer-menu-links {
+    text-align: left;
+}
+.footer-grid-bottom {
+    grid-row: 2;
+    grid-column: 2 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
