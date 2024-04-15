@@ -3,11 +3,22 @@
 let menuBtn = document.getElementById('menuBtn');
 const menu = document.getElementById('menu');
 
+const beanOne = document.querySelector('.menu-button-beans img:nth-child(1)');
+const beanTwo = document.querySelector('.menu-button-beans img:nth-child(2)');
+const beanThree = document.querySelector('.menu-button-beans img:nth-child(3)');
+
+let isMenuOpen = false;
+
 menuBtn.addEventListener('click', toggleDisplay);
 
 function toggleDisplay() {
 
     menu.classList.toggle('menu-visible');
+
+    beanOne.classList.toggle('animateBean1');
+    beanTwo.classList.toggle('animateBean2');
+    beanThree.classList.toggle('animateBean3');
+
 
   }
 

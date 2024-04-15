@@ -11,7 +11,7 @@ body {
     display: none;
     z-index: 998;
     left: -100%;
-    animation: slideInMenu 1s forwards; 
+    animation: slideInMenu 0.5s forwards; 
 }
 
 .menu-button {
@@ -21,12 +21,10 @@ body {
     top: 0;
     right: 0;
     z-index: 999;
-    /* KOD FÖR ATT GÖMMA KNAPP
     background: none;
     border: none;
     outline: none;
     box-shadow: none;
-    */
 }
 
 .menu-button-beans {
@@ -34,7 +32,7 @@ body {
     flex-direction: column;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 25;
 }
 
 .menu-flexbox {
@@ -76,6 +74,64 @@ body {
     to {
         left: 0;
     }
+}
+
+/* ****************    BEANS ANIMATION   **************** */
+
+@keyframes rotateBean1 {
+    50% {
+        rotate: 40deg;
+        transform: translateX(10px); 
+
+    }
+    100% {
+        rotate: 40deg;
+        transform: translateX(10px); 
+    }
+}
+
+@keyframes rotateBean2 {
+    50% {
+        rotate: -70deg;
+        transform: translateX(10px); 
+        transform: translateY(-25px); 
+
+
+    }
+    100% {
+        rotate: -70deg;
+        transform: translateX(10px); 
+        transform: translateY(-25px); 
+
+    }
+}
+
+@keyframes rotateBean3 {
+    50% {
+        rotate: 15deg;
+        transform: translateY(-25px); 
+    }
+    100% {
+        rotate: 15deg;
+        transform: translateY(-25px); 
+
+    }
+}
+
+.animateBean1 {
+    animation: rotateBean1 2s forwards; 
+
+}
+
+.animateBean2 {
+    animation: rotateBean2 2s forwards; 
+
+
+}
+
+.animateBean3 {
+    animation: rotateBean3 2s forwards; 
+
 }
 
 
