@@ -66,11 +66,6 @@ body {
     grid-column: span 4;
 }
 
-.aeropress-image {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 2;
-}
-
 .method-container {
     display: grid;
     grid-column: span 4;
@@ -80,18 +75,22 @@ body {
 
 }
 
-.information-container {
-    display: grid;
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 3;
-    align-items: center;
-}
-
 .method-image {
     width: 385px;
     height: 350px;
 }
 
+.information-container-areopress {
+    display: grid;
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 3;
+}
+
+.aeropress-image {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+}
 
 .aeropress {
     grid-column: 3 / span 1;
@@ -99,10 +98,10 @@ body {
     margin-bottom: 32px;
 }
 
-.areopress-sub-heading {
+.areopress-subheading {
     grid-column: 3 / span 1;
     grid-row: 2 / span 1;
-    align-self: center;
+    align-self: flex-end;
     margin-bottom: 20px;
 }
 
@@ -110,8 +109,62 @@ body {
     display: grid;
     grid-column: 3 / span 2;
     grid-row: 3 / span 1;
-    align-self: center;
+    align-self: flex-start;
+    margin-right: 23px;
 }
+
+.method-container-coffeemaker {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, auto); 
+    grid-column: span 4;
+    grid-row: span 3;
+    margin-top: 20px;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.method-image-container-coffeemaker {
+    display: grid;
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+    margin-right: 23px;
+}
+
+.coffeemaker {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+    align-self: flex-start;
+}
+
+.information-container-coffemaker {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+}
+
+.coffeemaker-image {
+    display: grid;
+    grid-column: 3 / span 2;
+    grid-row: 5 / span 2;
+}
+
+.coffemaker-subheading {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    align-self: flex-end;
+
+}
+
+.coffeemaker-method-information {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.information-container-coffemaker {
+    display: grid;
+}
+
 
 .slideshow {
     grid-column: span 4;
