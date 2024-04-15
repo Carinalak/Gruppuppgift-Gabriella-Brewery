@@ -11,7 +11,6 @@ function toggleDisplay() {
 
   }
 
-
 //feature to be able to flip the coffee cards
   let cards = document.querySelectorAll('.flip-card');
 

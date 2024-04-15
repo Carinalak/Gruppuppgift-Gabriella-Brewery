@@ -10,6 +10,8 @@ body {
     background-color: #F8E9D6;
     display: none;
     z-index: 998;
+    left: -100%;
+    animation: slideInMenu 1s forwards; 
 }
 
 .menu-button {
@@ -65,6 +67,17 @@ body {
 .menu-visible {
     display: block;
 }
+
+
+@keyframes slideInMenu {
+    from {
+        left: -100%; 
+    }
+    to {
+        left: 0;
+    }
+}
+
 
 /* ****************   THE BREWERY CLUB SECTION  **************** */
 
