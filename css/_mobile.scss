@@ -389,7 +389,7 @@ body {
 
 /* ************* SLIDESHOW - OUR CAFÉ PICKS SECTION ********* */
 
-.slideshow {
+.slideshow-section {
     max-width: 100%;
     overflow: hidden;
     margin: auto;
@@ -400,8 +400,8 @@ body {
         font-weight: 300;
         text-align: center;
     }
-    .slide {
-        .image-container {
+    .slideshow-slide {
+        .slideshow-image-container {
             width: calc(100% - 40px);
             padding-bottom: calc(100% - 40px);
             position: relative;
@@ -417,7 +417,7 @@ body {
                 height: 100%;
                 object-fit: cover;
             }
-            .dots {
+            .slideshow-dots {
                 background-color: rgba(255, 255, 255, 0.564);
                 border-radius: 20px;
                 padding: 1.5px;
@@ -448,7 +448,7 @@ body {
         }    
     }
 
-    .text {
+    .slideshow-text {
         color: white;
         padding: 10px;
         font-family: "Cormorant Garamond";

@@ -35,7 +35,7 @@ function toggleDisplay() {
 // SLIDESHOW - OUR CAFÉ PICKS SECTION
 
 document.addEventListener("DOMContentLoaded", function() {
-    const slides = document.querySelectorAll(".slide");
+    const slides = document.querySelectorAll(".slideshow-slide");
     let currentSlide = 0;
     let touchstartX = 0;
     let touchendX = 0;
