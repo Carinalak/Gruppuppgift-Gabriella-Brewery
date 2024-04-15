@@ -56,21 +56,18 @@
             </div>
         </div>
     </section>
-
-    <section class="about-beans-section">
-        <div class="about-beans-container">
-            <h2 class="about-beans-heading">The beans</h2>
-            <p class="about-beans-paragraph">Crafting the perfect cup of coffee is a symphony of senses and technique. 
-                It begins with the careful selection of beans, each chosen for its unique characteristics and flavor profile. 
-                Roasting transforms these raw beans into aromatic gems, with temperature and duration tailored to bring out their nuanced flavors. 
-                Grinding the beans to the perfect consistency is an art in itself, ensuring an even extraction of flavor during brewing. 
-                Water, heated to precise temperatures, dances with the ground coffee, coaxing out its essence through a delicate infusion process.</p>
-            <p class="about-beans-paragraph2">Click on the cards to get more information about that perticular bean!</p>
-        </div>
-    </section>
     
     <section class="flip-card-section">
-        <div class="flip-card-container">
+      <div class="about-beans-container">
+        <h2 class="about-beans-heading">The beans</h2>
+        <p class="about-beans-paragraph">Crafting the perfect cup of coffee is a symphony of senses and technique. 
+            It begins with the careful selection of beans, each chosen for its unique characteristics and flavor profile. 
+            Roasting transforms these raw beans into aromatic gems, with temperature and duration tailored to bring out their nuanced flavors. 
+            Grinding the beans to the perfect consistency is an art in itself, ensuring an even extraction of flavor during brewing. 
+            Water, heated to precise temperatures, dances with the ground coffee, coaxing out its essence through a delicate infusion process.</p>
+        <p class="about-beans-paragraph2">Click on the cards to get more information about that perticular bean!</p>
+      </div>
+        <div class="flip-card-container arabica">
             <div class="flip-card">
               <div class="card-content card-content-front">
                 <h3 class="front-card-heading">Arabica</h3>
@@ -87,7 +84,7 @@
             </div>
         </div>
 
-        <div class="flip-card-container">
+        <div class="flip-card-container bourbon">
             <div class="flip-card">
               <div class="card-content card-content-front">
                 <h3 class="front-card-heading">Bourbon</h3>
@@ -104,7 +101,7 @@
             </div>
         </div>
 
-        <div class="flip-card-container">
+        <div class="flip-card-container gesha">
             <div class="flip-card">
               <div class="card-content card-content-front">
                 <h3 class="front-card-heading">Gesha</h3>
@@ -121,7 +118,7 @@
             </div>
         </div>
 
-        <div class="flip-card-container">
+        <div class="flip-card-container maragogipe">
             <div class="flip-card">
               <div class="card-content card-content-front">
                 <h3 class="front-card-heading">Maragogipe</h3>
@@ -137,7 +134,7 @@
             </div>
         </div>
 
-        <div class="flip-card-container">
+        <div class="flip-card-container robusta">
             <div class="flip-card">
               <div class="card-content card-content-front">
                 <h3 class="front-card-heading">Robusta</h3>
@@ -153,7 +150,7 @@
             </div>
         </div>
 
-        <div class="flip-card-container">
+        <div class="flip-card-container typica">
             <div class="flip-card">
               <div class="card-content card-content-front">
                 <h3 class="front-card-heading">Typica</h3>
@@ -401,28 +398,34 @@
     </div>
 
      <footer>
-        <h3>Join the brewery</h3>
+            <section class="footer-grid-section-left">
+                <h3>Join the brewery</h3>
+                <div class="signup-text">
+                    Sign up for our newsletter and stay up to date with 
+                    our specials, updates, and general goss. Worth it... promise.
+                </div>
+                <form class="subscribe-form">
+                    <label class="subscribe-input-position"> <input type="text" placeholder="Enter your email..." class="subscribe-input"></label>
+                    <button class="subscribe-btn" disabled>subscribe</button>
+                </form>
+            </section>
 
-        <div class="signup-text">
-            Sign up for our newsletter and stay up to date with 
-            our specials, updates, and general goss. Worth it... promise.
-        </div>
-        <form class="subscribe-form">
-            <label> <input type="text" placeholder="Enter your email..." class="subscribe-input"></label>
-            <button class="subscribe-btn" disabled>subscribe</button>
-        </form>
-        <a href=""><img src="assets/images/socials.png"></a>
-        <div class="footer-menu-container">
+            <section class="footer-grid-section-right">
+                <a href=""><img src="assets/images/socials2.png"></a>
+                <div class="footer-menu-container">
 
-            <ul class="footer-menu-links">
-                <li><a href="">About us</a></li>
-                <li><a href="">Terms of use</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="" class="change-to-lowercase">contact@thebreweryclub.com</a></li>
-            </ul>
+                    <ul class="footer-menu-links">
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Terms of use</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="" class="change-to-lowercase">contact@thebreweryclub.com</a></li>
+                    </ul>
+                </div>
+            </section> 
 
-           <p class="copyright-text"> &copy; 2024, The Brewery Club</p>
-        </div>
+            <section class="footer-grid-bottom">
+                <p class="copyright-text"> &copy; 2024, The Brewery Club</p>
+            </section>
     </footer>
 
 <script src="script.js" type="module"></script>

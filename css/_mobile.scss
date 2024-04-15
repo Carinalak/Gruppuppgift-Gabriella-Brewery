@@ -4,10 +4,14 @@ body {
 
 /* ****************    MENU   **************** */
 .menu {
+    position: fixed;
     width: 100vw;
     height: 100vh;
     background-color: #F8E9D6;
     display: none;
+    z-index: 998;
+    left: -100%;
+    animation: slideInMenu 0.5s forwards; 
 }
 
 .menu-button {
@@ -16,13 +20,11 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 2;
-    /* KOD FÖR ATT GÖMMA KNAPP
+    z-index: 999;
     background: none;
     border: none;
     outline: none;
     box-shadow: none;
-    */
 }
 
 .menu-button-beans {
@@ -30,7 +32,7 @@ body {
     flex-direction: column;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 25;
 }
 
 .menu-flexbox {
@@ -63,6 +65,75 @@ body {
 .menu-visible {
     display: block;
 }
+
+
+@keyframes slideInMenu {
+    from {
+        left: -100%; 
+    }
+    to {
+        left: 0;
+    }
+}
+
+/* ****************    BEANS ANIMATION   **************** */
+
+@keyframes rotateBean1 {
+    50% {
+        rotate: 40deg;
+        transform: translateX(10px); 
+
+    }
+    100% {
+        rotate: 40deg;
+        transform: translateX(10px); 
+    }
+}
+
+@keyframes rotateBean2 {
+    50% {
+        rotate: -70deg;
+        transform: translateX(10px); 
+        transform: translateY(-25px); 
+
+
+    }
+    100% {
+        rotate: -70deg;
+        transform: translateX(10px); 
+        transform: translateY(-25px); 
+
+    }
+}
+
+@keyframes rotateBean3 {
+    50% {
+        rotate: 15deg;
+        transform: translateY(-25px); 
+    }
+    100% {
+        rotate: 15deg;
+        transform: translateY(-25px); 
+
+    }
+}
+
+.animateBean1 {
+    animation: rotateBean1 2s forwards; 
+
+}
+
+.animateBean2 {
+    animation: rotateBean2 2s forwards; 
+
+
+}
+
+.animateBean3 {
+    animation: rotateBean3 2s forwards; 
+
+}
+
 
 /* ****************   THE BREWERY CLUB SECTION  **************** */
 
@@ -110,9 +181,11 @@ body {
 
 .brewery-club-paragraph{
     color: #FFFFFF;
+    margin-left: 23px;
+    margin-right: 23px;
 }
 
-/* ****************   ABOUT BEAN SECTION  **************** */
+/* ****************   ABOUT THE BEANS SECTION  **************** */
 
 .about-beans-section {
     display: flex;
@@ -130,19 +203,135 @@ body {
 .about-beans-heading {
     font-size: 40px;
     margin-bottom: 40px;
-    margin-top: 0;
+    margin-top: 33px;
+    color: #F8E9D6;
+}
+
+.about-beans-paragraph {
+    color: #F8E9D6;;
 }
 
 .about-beans-paragraph2 {
     margin-top: 10px;
+    color: #F8E9D6;
 }
 /* ****************   FLIP CARDS SECTION  **************** */
 
 .flip-card-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+
+.flip-card-container {
+    display: inline-block;
+    position: relative;
+    width: 310px;
+    height: 350px;
+    margin-bottom: 42px;
+    margin-top: 10px;
+    perspective: 600px;
+}
+
+.flip-card-container:first-child {
+    margin-top: 50px;
+}
+
+.flip-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+}
+
+.flip-card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 2rem;
+
+}
+
+.card-content-front {
+    background-color: #142815;
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0);
+}
+
+.front-card-image {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    position: absolute; 
+    top: 52%; 
+    left: 50%; 
+    transform: translate(-50%, -35%);
+
+}
+
+.front-card-heading {
+    position: absolute;
+    top: -3%; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: #F8E9D6;
+}
+
+.flip-card-arrows {
+    position: absolute;
+    top: 88%; 
+    right: 5%;
+    width: 25px;
+    height: 23px;
+
+}
+
+.card-content-back {
+    background-color: #9E7147;
+    transform: rotateY(180deg);
+}
+
+
+.back-card-heading,
+.back-card-information,
+.flip-card-button {
+    position: absolute;
+}
+
+.back-card-heading {
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: #F8E9D6;;
+}
+
+.back-card-information {
+    line-height: 20px;
+    width: 240px;
+    top: 20%; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flip-card-container:first-child {
+    margin-top: 10px;
+}
+
+.flip-card-container {
+    grid-column: span 2;
+    justify-self: center;
+    align-self: center;
 }
 
 
@@ -168,6 +357,7 @@ body {
 .method-heading {
     margin-left: 20px;
     margin-right: 20px;
+    color: #F8E9D6;
 }
 
 .aeropress {
@@ -182,12 +372,20 @@ body {
 
 .method-image {
     align-items: center;
+    object-fit: cover;
 }
 
 .information-container {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+.method-information, .method-subheading {
+    color: #F8E9D6;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 /* ************* SLIDESHOW - OUR CAFÉ PICKS SECTION ********* */
 
@@ -261,7 +459,7 @@ body {
     }
 }
 
-/* ****************  FOOTER   **************** */
+/* *********************  FOOTER   ********************* */
 
 footer {
     background-color: #142815;
@@ -269,6 +467,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 20px;
 }
 
 footer h3 {
@@ -276,9 +475,10 @@ footer h3 {
 }
 
 .signup-text {
-    width: 350px;
+    width: 280px;
     font-family: "Cormorant SC", serif;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .subscribe-input {
@@ -288,6 +488,7 @@ footer h3 {
     background-color: #142815;
     color: #F8E9D6; 
     outline: none;
+    width: 250px;
 }
 
 .subscribe-input::placeholder {
@@ -334,6 +535,6 @@ footer h3 {
 .copyright-text {
     text-transform: lowercase;
     color: #F8E9D6;
-    padding-top: 50px;
+    padding-top: 30px;
     text-transform: capitalize;
 }
