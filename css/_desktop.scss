@@ -1,8 +1,10 @@
 body {
     background-color: #312418;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-/* ****************   ABOUT BEAN SECTION  **************** */
+/* ****************   ABOUT THE BEANS SECTION  **************** */
 
 .about-beans-heading {
     color: #F8E9D6;
@@ -14,6 +16,50 @@ body {
 }
 
 /* ****************   FLIP CARD SECTION  **************** */
+
+.flip-card-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: repeat(6, auto); 
+    grid-gap: 10px;
+    margin-top: 122px;
+}
+
+.arabica {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+}
+
+.bourbon {
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 2;
+}
+
+.gesha {
+    grid-column: 10 / span 3;
+    grid-row: 2 / span 2;
+}
+
+.robusta {
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 2;
+}
+
+.typica {
+    grid-column: 5 / span 4;
+    grid-row: 5 / span 2;
+}
+
+.maragogipe {
+    grid-column: 10 / span 3;
+    grid-row: 4 / span 2;
+}
+
+.about-beans-container {
+    grid-column: 5 / span 4;
+    grid-row: 3 / span 2;
+
+}
 
 .flip-card-container {
     display: inline-block;
@@ -105,7 +151,7 @@ body {
     top: 0; 
     left: 50%;
     transform: translateX(-50%);
-    color: #F8E9D6;;
+    color: #F8E9D6;
 }
 
 .back-card-information {
@@ -114,6 +160,7 @@ body {
     top: 20%; 
     left: 50%;
     transform: translateX(-50%);
+    font-size: 14px;
 }
 
 /* ****************    BREWING METHODS SECTION   **************** */
