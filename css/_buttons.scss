@@ -1,17 +1,18 @@
 .subscribe-btn {
     opacity: 0.5;
     background-color: #F8E9D6;
-    font-family: "Cormorant SC", serif;
-    font-size: 20px;
-    font-weight: 200;
+    color: #312418;
+    font-family: 'Cormoran', serif;
     text-transform: uppercase;
-    font-style: normal;
+    //width: 150px;
+    //height: 48px;
     border-radius: 20px;
     border-style: none;
     width: 120px;
     height: 35px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .subscribe-btn:disabled,
