@@ -190,13 +190,18 @@ body {
     grid-column: span 4;
 }
 
+.brewing-methods-heading {
+    margin-left: 40px;
+    grid-column: 1 / span 4;
+}
+
 .method-container {
     display: grid;
     grid-column: span 4;
     grid-row: span 3;
     margin-left: 23px;
     margin-right: 23px;
-
+    margin-top: 50px;
 }
 
 .method-image {
@@ -204,40 +209,15 @@ body {
     height: 350px;
 }
 
-.information-container-areopress {
-    display: grid;
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 3;
+.method-image-container {
+    justify-content: flex-start;
 }
 
-.aeropress-image {
-    display: grid;
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 2;
-}
+/* *POSITIONING AEROPRESS, COLD BREW, POUR OVER* */
 
-.aeropress {
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 1;
-    margin-bottom: 32px;
-}
-
-.areopress-subheading {
-    grid-column: 3 / span 1;
-    grid-row: 2 / span 1;
-    align-self: flex-end;
-    margin-bottom: 20px;
-}
-
-.areopress-method-information {
-    display: grid;
-    grid-column: 3 / span 2;
-    grid-row: 3 / span 1;
-    align-self: flex-start;
-    margin-right: 23px;
-}
-
-.method-container-coffeemaker {
+.method-container-aeropress, 
+.method-container-cold-brew,
+.method-container-pour-over {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: repeat(3, auto); 
@@ -248,45 +228,152 @@ body {
     margin-right: 23px;
 }
 
-.method-image-container-coffeemaker {
+.method-image-container-aeropress, 
+.image-container-cold-brew,
+.image-container-pour-over {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    justify-content: center;
+}
+
+.aeropress, 
+.cold-brew,
+.pour-over {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 3;
+    margin-left: 20px;
+}
+
+.information-container-areopress, 
+.information-container-cold-brew,
+.information-container-pour-over {
+    display: grid;
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 3;
+}
+
+.aeropress-image, 
+.cold-brew-image,
+.pour-over-image
+ {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-content: center;
+}
+
+.areopress-subheading, 
+.cold-brew-subheading,
+.pour-over-subheading {
+    display: grid;
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 1;
+    margin-left: 0;
+}
+
+.aeropress-method-information, 
+.cold-brew-method-information,
+.method-information-pour-over {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 1;
+    margin-left: 0;
+}
+
+/* *POSITIONING COFFEEMAKER, FRENCH PRESS & SIPHON* */
+
+.method-container-coffeemaker, 
+.method-container-french-press,
+.method-container-siphon {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, auto); 
+    grid-column: span 4;
+    grid-row: span 3;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.method-image-container-coffeemaker, 
+.image-container-french-press,
+.image-container-siphon {
     display: grid;
     grid-column: 3 / span 2;
     grid-row: 1 / span 2;
     margin-right: 23px;
 }
 
-.coffeemaker {
+.coffeemaker, 
+.french-press,
+.siphon {
     grid-column: 1 / span 2;
     grid-row: 1 / span 3;
     align-self: flex-start;
+    margin-left: 0;
 }
 
-.information-container-coffemaker {
+.information-container-coffemaker, 
+.information-container-french-press,
+.information-container-siphon {
     display: grid;
     grid-column: 1 / span 2;
     grid-row: 1 / span 3;
+    margin-left: 0;
+    justify-content: center;
 }
 
-.coffeemaker-image {
+.coffeemaker-image, 
+.french-press-image,
+.siphon-image {
     display: grid;
     grid-column: 3 / span 2;
     grid-row: 5 / span 2;
 }
 
-.coffemaker-subheading {
+.coffemaker-subheading, 
+.french-press-subheading,
+.siphon-subheading {
     grid-column: 1 / span 2;
     grid-row: 2 / span 1;
-    align-self: flex-end;
+    align-self: center;
 
 }
 
-.coffeemaker-method-information {
+.coffeemaker-method-information, 
+.method-information-french-press,
+.method-information-siphon {
     grid-column: 1 / span 2;
     grid-row: 3 / span 1;
+    margin-right: 30px;
 }
 
-.information-container-coffemaker {
-    display: grid;
+
+
+.method-container-cold-brew,
+.method-container-pour-over  {
+    margin-top: 50px;
+ }
+
+
+.method-heading {
+    margin-top: 0;
+}
+
+.pour-over {
+    margin-left: 0;
+}
+
+.method-subheading {
+    align-self: center;
+}
+
+.information-container {
+    align-self: center;
+}
+
+.method-information-pour-over {
+    margin-right: 20px;
 }
 
 
@@ -294,8 +381,7 @@ body {
 
 .method-information, .method-subheading {
     color: #f8e9d6;
-    margin-left: 23px;
-    margin-right: 23px;
+    margin-left: 0;
 }
 
 /* ------------------- SLIDESHOW -------------------- */
