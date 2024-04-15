@@ -263,7 +263,7 @@ body {
     }
 }
 
-/* ****************  FOOTER   **************** */
+/* *********************  FOOTER   ********************* */
 
 footer {
     background-color: #142815;
@@ -271,6 +271,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 20px;
 }
 
 footer h3 {
@@ -278,9 +279,10 @@ footer h3 {
 }
 
 .signup-text {
-    width: 350px;
+    width: 280px;
     font-family: "Cormorant SC", serif;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .subscribe-input {
@@ -290,6 +292,7 @@ footer h3 {
     background-color: #142815;
     color: #F8E9D6; 
     outline: none;
+    width: 250px;
 }
 
 .subscribe-input::placeholder {
@@ -336,6 +339,6 @@ footer h3 {
 .copyright-text {
     text-transform: lowercase;
     color: #F8E9D6;
-    padding-top: 50px;
+    padding-top: 30px;
     text-transform: capitalize;
 }
