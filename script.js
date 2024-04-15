@@ -3,14 +3,24 @@
 let menuBtn = document.getElementById('menuBtn');
 const menu = document.getElementById('menu');
 
+const beanOne = document.querySelector('.menu-button-beans img:nth-child(1)');
+const beanTwo = document.querySelector('.menu-button-beans img:nth-child(2)');
+const beanThree = document.querySelector('.menu-button-beans img:nth-child(3)');
+
+let isMenuOpen = false;
+
 menuBtn.addEventListener('click', toggleDisplay);
 
 function toggleDisplay() {
 
     menu.classList.toggle('menu-visible');
 
-  }
+    beanOne.classList.toggle('animateBean1');
+    beanTwo.classList.toggle('animateBean2');
+    beanThree.classList.toggle('animateBean3');
 
+
+  }
 
 //feature to be able to flip the coffee cards
   let cards = document.querySelectorAll('.flip-card');
@@ -25,7 +35,7 @@ function toggleDisplay() {
 // SLIDESHOW - OUR CAFÉ PICKS SECTION
 
 document.addEventListener("DOMContentLoaded", function() {
-    const slides = document.querySelectorAll(".slide");
+    const slides = document.querySelectorAll(".slideshow-slide");
     let currentSlide = 0;
     let touchstartX = 0;
     let touchendX = 0;
