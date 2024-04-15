@@ -62,47 +62,38 @@ body {
 }
 
 /* ------------------- SLIDESHOW -------------------- */
-
 .slideshow {
     grid-column: span 4;
-    max-width: 100%;
-    overflow: hidden;
-    margin: auto;
-    position: relative;
-    h2 {
-        color: #F8E9D6;
-        font-size: 64px;
-        font-weight: 300;
-        text-align: center;
-    }
-    .slide {
-        grid-column: 4;
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 10px;
-        .image-container {
-            grid-column: 2 / -1;
-            position: relative;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            .dots {
-                display: none;
-            }
-        }  
-        .text {
-            grid-column: 1;
-            display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 10px;
-            align-items: start;
-            h4 {
-                grid-column: 1;
-            }
-        }  
-    }  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2;
+    gap: 20px; 
+}
+
+.slideshow h2 {
+    color: #F8E9D6;
+    font-size: 64px;
+    font-weight: 300;
+    text-align: center;
+    grid-column: 1 / span 4; 
+    grid-row: 1;
+}
+
+.slide {
+    display: grid;
+    grid-column: 2 / span 3;
+    grid-row: 2;
+}
+
+.image-container {
+    grid-column: 2 / span 3; 
+    grid-row: 2;
+}
+
+.text {
+    grid-column: 1 / span 1; 
+    grid-row: 2; 
+    align-items: start;
 }
 
 
