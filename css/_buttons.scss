@@ -1,15 +1,16 @@
 .subscribe-btn {
-    opacity: 0.5;
+    //opacity: 0.5;
     background-color: #F8E9D6;
     color: #312418;
     font-family: 'Cormoran', serif;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    //width: 150px;
-    //height: 48px;
     border-radius: 20px;
     border-style: none;
-    width: 120px;
-    height: 35px;
+    width: 150px;
+    height: 48px;
+    //width: 120px;
+    //height: 35px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     margin-bottom: 20px;
@@ -33,6 +34,33 @@
     box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
+
+.flip-card-button {
+    font-family: 'Cormoran', serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    top: 80%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 48px;
+    border-radius: 20px;
+    background-color: #F8E9D6;
+    border: 0;
+    color: #312418;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.flip-card-button:hover {
+    background: radial-gradient(ellipse at center, #FFFFFF 10%, #FFFFFF 40%, rgba(248,233,214, 0.793) 70%, rgba(248,233,214, 0.5) 100%);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.flip-card-button:active {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* flip-card-button OLD */
+/*
 .flip-card-button {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
@@ -47,3 +75,4 @@
     color: #312418;
     cursor: pointer;
 }
+*/
