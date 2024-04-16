@@ -181,17 +181,192 @@ body {
     align-self: center;
 }
 
+/* ****************   BREWING METHODS SECTION  **************** */
+
 .brewing-methods-section {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(13, auto); 
     grid-column: span 4;
 }
 
-/* ------------------- BREWING METHODS SECTION ----------------- */
+.brewing-methods-heading {
+    margin-left: 40px;
+    grid-column: 1 / span 4;
+}
+
+.method-heading {
+    margin-top: 0;
+}
+
+.method-subheading {
+    align-self: center;
+}
+
+.information-container {
+    align-self: center;
+}
+
+.method-container {
+    display: grid;
+    grid-column: span 4;
+    grid-row: span 3;
+    margin-left: 23px;
+    margin-right: 23px;
+    margin-top: 50px;
+}
+
+.method-image {
+    width: 385px;
+    height: 350px;
+}
+
+.method-image-container {
+    justify-content: flex-start;
+}
 
 .method-information, .method-subheading {
     color: #f8e9d6;
+    margin-left: 0;
+}
+
+/* *POSITIONING AEROPRESS, COLD BREW & POUR OVER* */
+
+.method-container-aeropress, 
+.method-container-cold-brew,
+.method-container-pour-over {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, auto); 
+    grid-column: span 4;
+    grid-row: span 3;
+    margin-top: 20px;
     margin-left: 23px;
     margin-right: 23px;
 }
+
+.method-image-container-aeropress, 
+.image-container-cold-brew,
+.image-container-pour-over {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    justify-content: center;
+}
+
+.aeropress, 
+.cold-brew,
+.pour-over {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 3;
+    margin-left: 20px;
+}
+
+.information-container-areopress, 
+.information-container-cold-brew,
+.information-container-pour-over {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 3;
+}
+
+.aeropress-image, 
+.cold-brew-image,
+.pour-over-image
+ {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-content: center;
+}
+
+.areopress-subheading, 
+.cold-brew-subheading,
+.pour-over-subheading {
+    display: grid;
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 1;
+    margin-left: 0;
+}
+
+.aeropress-method-information, 
+.cold-brew-method-information,
+.method-information-pour-over {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 1;
+    margin-left: 0;
+}
+
+/* *POSITIONING COFFEEMAKER, FRENCH PRESS & SIPHON* */
+
+.method-container-coffeemaker, 
+.method-container-french-press,
+.method-container-siphon {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, auto); 
+    grid-column: span 4;
+    grid-row: span 3;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.method-image-container-coffeemaker, 
+.image-container-french-press,
+.image-container-siphon {
+    display: grid;
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+    margin-right: 23px;
+}
+
+.coffeemaker, 
+.french-press,
+.siphon {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+    align-self: flex-start;
+    margin-left: 0;
+}
+
+.information-container-coffemaker, 
+.information-container-french-press,
+.information-container-siphon {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+    margin-left: 0;
+    justify-content: center;
+}
+
+.coffeemaker-image, 
+.french-press-image,
+.siphon-image {
+    display: grid;
+    grid-column: 3 / span 2;
+    grid-row: 5 / span 2;
+}
+
+.coffemaker-subheading, 
+.french-press-subheading,
+.siphon-subheading {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    align-self: center;
+
+}
+
+.coffeemaker-method-information, 
+.method-information-french-press,
+.method-information-siphon {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    margin-right: 30px;
+}
+
+.method-container-cold-brew,
+.method-container-pour-over  {
+    margin-top: 50px;
+ }
 
 /* ------------------- SLIDESHOW -------------------- */
 .slideshow-section {
