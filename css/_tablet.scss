@@ -195,6 +195,18 @@ body {
     grid-column: 1 / span 4;
 }
 
+.method-heading {
+    margin-top: 0;
+}
+
+.method-subheading {
+    align-self: center;
+}
+
+.information-container {
+    align-self: center;
+}
+
 .method-container {
     display: grid;
     grid-column: span 4;
@@ -213,7 +225,12 @@ body {
     justify-content: flex-start;
 }
 
-/* *POSITIONING AEROPRESS, COLD BREW, POUR OVER* */
+.method-information, .method-subheading {
+    color: #f8e9d6;
+    margin-left: 0;
+}
+
+/* *POSITIONING AEROPRESS, COLD BREW & POUR OVER* */
 
 .method-container-aeropress, 
 .method-container-cold-brew,
@@ -231,7 +248,6 @@ body {
 .method-image-container-aeropress, 
 .image-container-cold-brew,
 .image-container-pour-over {
-    display: grid;
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
     justify-content: center;
@@ -248,7 +264,6 @@ body {
 .information-container-areopress, 
 .information-container-cold-brew,
 .information-container-pour-over {
-    display: grid;
     grid-column: 3 / span 2;
     grid-row: 1 / span 3;
 }
@@ -348,41 +363,10 @@ body {
     margin-right: 30px;
 }
 
-
-
 .method-container-cold-brew,
 .method-container-pour-over  {
     margin-top: 50px;
  }
-
-
-.method-heading {
-    margin-top: 0;
-}
-
-.pour-over {
-    margin-left: 20px;
-}
-
-.method-subheading {
-    align-self: center;
-}
-
-.information-container {
-    align-self: center;
-}
-
-.method-information {
-    margin-right: 20px;
-}
-
-
-/* ------------------- BREWING METHODS SECTION ----------------- */
-
-.method-information, .method-subheading {
-    color: #f8e9d6;
-    margin-left: 0;
-}
 
 /* ------------------- SLIDESHOW -------------------- */
 .slideshow-section {

@@ -248,7 +248,6 @@ body {
 
 
 /* ****************    BREWING METHODS SECTION   **************** */
-
 .brewing-methods-section {
     margin-top: 20px;
     display: grid;
@@ -259,41 +258,53 @@ body {
     margin-right: 40px;
 }
 
+
 .brewing-methods-heading {
     font-size: 64px;
     color:  #F8E9D6;
     grid-column: span 12;
     grid-row: 1;
-    margin-left: 10px;
 }
 
-.method-container,
-.information-container,
-.method-heading,
-.method-subheading,
-.method-information {
+
+.method-container, .information-container, .method-heading, .method-subheading, .method-information {
     grid-column: span 4;
     grid-row: span 1;
 }
+
+
+.method-container {
+    margin-top: 0;
+    margin-left: 0;
+}
+
 
 .method-image-container, .method-image {
     justify-content: flex-start;
 }
 
 
-.information-container {
+.method-information, .method-subheading, .method-heading {
     margin-left: 0;
+    margin-right: 0;
 }
 
-.method-heading, .pour-over {
-    margin-top: 50px;
-    margin-left: 0;
+
+.information-container {
+    margin-right: 0;
 }
+
+
+.method-heading {
+    margin-top: 50px;
+}
+
 
 .method-image-container {
     grid-column: span 5;
     grid-row: 2;
 }
+
 
 .method-image {
     width: 400px;
@@ -301,7 +312,14 @@ body {
     object-fit: cover;
 }
 
+
+
+
 .method-subheading, .method-information {
     color: #F8E9D6;
 }
+
+
+
+
 
