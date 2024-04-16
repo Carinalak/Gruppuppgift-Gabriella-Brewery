@@ -274,20 +274,16 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: left;
-    border: 1px solid white;
 }
 .footer-grid-section-left h3 {
     text-align: left; 
 }
-
 .subscribe-form {
     grid-column: 1 / span 6; 
     grid-row: 2;
     width: 450px;
     display: flex;
     flex-direction: row;
-    border: 1px solid white;
-    
 }
 .subscribe-input-position {
    margin-left: 0;
@@ -300,6 +296,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: left;
+    margin-top: 40px;
 }
 .footer-menu-container {
     display: flex;
