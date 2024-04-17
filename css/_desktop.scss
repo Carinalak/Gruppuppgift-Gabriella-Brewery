@@ -252,10 +252,77 @@ body {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, auto);
     grid-gap: 10px;
     margin-left: 40px;
     margin-right: 40px;
+    .brewing-methods-heading {
+        font-size: 64px;
+        color:  #F8E9D6;
+        grid-column: 1 / span 12;
+        grid-row: 1;
+        margin-left: 0;
+    }
+    .method-container {
+        display: grid;
+        grid-column: span 4;
+        grid-row: span 6;
+        margin-top: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        .method-heading {
+            grid-column: 1 / span 4;
+            grid-row: 2;
+            margin-left: 10px;
+            margin-right: 0;
+            margin-top: 40px;
+        }
+        .method-image-container {
+            justify-content: flex-start;
+            align-self: start;
+            align-items: start;
+            grid-column: 1 / span 4;
+            grid-row: 3;
+            margin: 0 auto;
+            display: grid;
+            .method-image {
+                vertical-align: top;
+                justify-content: flex-start;
+                width: 400px;
+                height: 450px;
+                object-fit: cover;
+                grid-column: span 4;
+                grid-row: 3;
+            }
+        }
+        .information-container {
+            display: grid;
+            grid-template-rows: repeat(6, auto);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            grid-column: 1 / span 4;
+            grid-row: 4;
+            margin-right: 10px;
+            margin-left: 10px;
+            .method-subheading {
+                grid-column: 1 / span 4;
+                grid-row: 1;
+                margin-left: 10px;
+                margin-right: 10px;
+                color: #F8E9D6;
+            }
+            .method-information {
+                grid-column: 1 / span 4;
+                grid-row: 2;
+                margin-left: 10px;
+                margin-right: 0;
+                color: #F8E9D6;
+            }
+        }
+        
+    }
 }
 
 
@@ -378,5 +445,4 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
 
