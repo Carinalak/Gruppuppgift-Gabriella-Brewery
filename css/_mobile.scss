@@ -550,6 +550,8 @@ footer h3 {
     color: #F8E9D6; 
     outline: none;
     width: 250px;
+    height: 25px;
+    text-align: center;
 }
 
 .subscribe-input::placeholder {
@@ -558,6 +560,9 @@ footer h3 {
     text-align: center;
 }
 
+.subscribe-input:focus::placeholder {
+    color: transparent;
+}
 .subscribe-form {
     padding-top: 20px;
     padding-bottom: 20px;
