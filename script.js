@@ -40,9 +40,19 @@ document.addEventListener("DOMContentLoaded", function() {
     let touchstartX = 0;
     let touchendX = 0;
 
-    function showSlide(slideIndex) {
-        slides.forEach(slide => slide.style.display = "none");
-        slides[slideIndex].style.display = "block";
+    //function showSlide(slideIndex) {
+     //   slides.forEach(slide => slide.style.display = "none");
+     //   slides[slideIndex].style.display = "block";
+   // }
+    function adjustSlideLayout() {
+        if (window.innerWidth > 700) {
+            slides.forEach(slide => slide.style.display = "grid");
+        } else {
+            function showSlide(slideIndex) {
+                slides.forEach(slide => slide.style.display = "none");
+                slides[slideIndex].style.display = "block";
+            }
+        }
     }
 
     function nextSlide() {
