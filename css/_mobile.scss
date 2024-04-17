@@ -89,11 +89,9 @@ body {
     }
 }
 /* ****************    COOKIE   **************** */
-.cookie-container {
-   
-    position: sticky;
-}
+
 .cookie-popup {
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +103,9 @@ body {
     color: #F8E9D6;
     border-radius: 15px;
     padding: 20px;
-    position: sticky;
+    margin-top: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+   
 }
 .cookie-buttons {
     display: flex;
