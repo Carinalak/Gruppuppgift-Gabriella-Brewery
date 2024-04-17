@@ -52,6 +52,14 @@ body {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 400;
+    font-size: 64px;
+    transition: font-size 0.3s ease;
+}
+
+
+.menu-anchor:hover{
+    font-size: 72px;
+
 }
 
 .menu-kitty {
