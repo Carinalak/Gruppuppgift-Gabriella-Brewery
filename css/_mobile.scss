@@ -119,21 +119,61 @@ body {
 }
 
 .animateBean1 {
-    animation: rotateBean1 2s forwards; 
-
+    animation: rotateBean1 2s forwards;
 }
 
 .animateBean2 {
     animation: rotateBean2 2s forwards; 
-
-
 }
 
 .animateBean3 {
     animation: rotateBean3 2s forwards; 
-
 }
 
+.deAnimateBean1 {
+    animation: rotateBean1-reverse 2s forwards; 
+}
+
+.deAnimateBean2 {
+    animation: rotateBean2-reverse 2s forwards;
+}
+
+.deAnimateBean3 {
+    animation: rotateBean3-reverse 2s forwards;
+}
+
+@keyframes rotateBean1-reverse {
+    from {
+        rotate: 40deg;
+        transform: translateX(10px); 
+    }
+    to {
+        rotate: 0deg;
+        transform: none; 
+    }
+}
+
+@keyframes rotateBean2-reverse {
+    from {
+        rotate: -70deg;
+        transform: translateX(10px) translateY(-25px); 
+    }
+    to {
+        rotate: 0deg;
+        transform: none; 
+    }
+}
+
+@keyframes rotateBean3-reverse {
+    from {
+        rotate: 15deg;
+        transform: translateY(-25px); 
+    }
+    to {
+        rotate: 0deg;
+        transform: none; 
+    }
+}
 
 /* ****************   THE BREWERY CLUB SECTION  **************** */
 
