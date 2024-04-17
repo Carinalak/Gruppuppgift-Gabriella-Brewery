@@ -14,15 +14,16 @@ menuBtn.addEventListener('click', toggleDisplay);
 function toggleDisplay() {
     isMenuOpen = !isMenuOpen;
 
-    menu.classList.toggle('menu-visible');
 
     if (isMenuOpen) {
         beanOne.classList.add('animateBean1');
         beanTwo.classList.add('animateBean2');
         beanThree.classList.add('animateBean3');
+        menu.classList.add('menu-visible');
         beanOne.classList.remove('deAnimateBean1');
         beanTwo.classList.remove('deAnimateBean2');
         beanThree.classList.remove('deAnimateBean3');
+        menu.classList.remove('menu-slideOut');
     } else {
         beanOne.classList.remove('animateBean1');
         beanTwo.classList.remove('animateBean2');
@@ -30,6 +31,11 @@ function toggleDisplay() {
         beanOne.classList.add('deAnimateBean1');
         beanTwo.classList.add('deAnimateBean2');
         beanThree.classList.add('deAnimateBean3');
+        menu.classList.add('menu-slideOut');
+
+        setTimeout(() => {
+            menu.classList.remove('menu-visible');
+        }, 500);
     }
 }
 

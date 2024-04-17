@@ -465,12 +465,24 @@ body {
   display: block;
 }
 
+.menu-slideOut {
+  animation: slideOut 0.5s forwards;
+}
+
 @keyframes slideInMenu {
   from {
     left: -100%;
   }
   to {
     left: 0;
+  }
+}
+@keyframes slideOut {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
   }
 }
 /* ****************    BEANS ANIMATION   **************** */

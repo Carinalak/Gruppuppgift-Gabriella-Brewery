@@ -66,6 +66,10 @@ body {
     display: block;
 }
 
+.menu-slideOut {
+    animation: slideOut 0.5s forwards; 
+}
+
 
 @keyframes slideInMenu {
     from {
@@ -73,6 +77,15 @@ body {
     }
     to {
         left: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%; 
     }
 }
 
