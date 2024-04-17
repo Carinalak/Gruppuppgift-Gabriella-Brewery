@@ -256,70 +256,55 @@ body {
     grid-gap: 10px;
     margin-left: 40px;
     margin-right: 40px;
+    .brewing-methods-heading {
+        font-size: 64px;
+        color:  #F8E9D6;
+        grid-column: span 12;
+        grid-row: 1;
+    }
+    .method-container {
+        grid-column: span 4;
+        grid-row: span 1;
+        margin-top: 0;
+        margin-left: 0;
+        .method-heading {
+            grid-column: span 4;
+            grid-row: span 1;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 50px;
+        }
+        .method-image-container {
+            justify-content: flex-start;
+            grid-column: span 5;
+            grid-row: 2;
+            .method-image {
+                justify-content: flex-start;
+                width: 400px;
+                height: 450px;
+                object-fit: cover;
+            }
+        }
+        .information-container {
+            grid-column: span 4;
+            grid-row: span 1;
+            margin-right: 0;
+            .method-subheading {
+                grid-column: span 4;
+                grid-row: span 1;
+                margin-left: 0;
+                margin-right: 0;
+                color: #F8E9D6;
+            }
+            .method-information {
+                grid-column: span 4;
+                grid-row: span 1;
+                margin-left: 0;
+                margin-right: 0;
+                color: #F8E9D6;
+            }
+        }
+        
+    }
+
 }
-
-
-.brewing-methods-heading {
-    font-size: 64px;
-    color:  #F8E9D6;
-    grid-column: span 12;
-    grid-row: 1;
-}
-
-
-.method-container, .information-container, .method-heading, .method-subheading, .method-information {
-    grid-column: span 4;
-    grid-row: span 1;
-}
-
-
-.method-container {
-    margin-top: 0;
-    margin-left: 0;
-}
-
-
-.method-image-container, .method-image {
-    justify-content: flex-start;
-}
-
-
-.method-information, .method-subheading, .method-heading {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-
-.information-container {
-    margin-right: 0;
-}
-
-
-.method-heading {
-    margin-top: 50px;
-}
-
-
-.method-image-container {
-    grid-column: span 5;
-    grid-row: 2;
-}
-
-
-.method-image {
-    width: 400px;
-    height: 450px;
-    object-fit: cover;
-}
-
-
-
-
-.method-subheading, .method-information {
-    color: #F8E9D6;
-}
-
-
-
-
-
