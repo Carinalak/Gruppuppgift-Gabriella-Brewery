@@ -1,25 +1,6 @@
+
 body {
     background-color: #312418;
-}
-
-/* ****************    TITLE PAGE   **************** */
-.title-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #142815;
-    width: 100vw;
-    height: 100vh;
-}
-
-.title-page-logo {
-    max-width: 100%;
-}
-
-.title-page-logo img {
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
 }
 
 /* ****************    MENU   **************** */
@@ -215,6 +196,27 @@ body {
         rotate: 0deg;
         transform: none; 
     }
+}
+
+
+/* ****************    TITLE PAGE   **************** */
+.title-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #142815;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title-page-logo {
+    max-width: 100%;
+}
+
+.title-page-logo img {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
 /* ****************   THE BREWERY CLUB SECTION  **************** */
