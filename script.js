@@ -85,6 +85,33 @@ document.addEventListener("DOMContentLoaded", function() {
     showSlide(currentSlide);
 });
 
+// SLIDESHOW TABLET
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    function checkScreenSize() {
+        if (window.innerWidth > 700) {
+            elementToShow.style.display = "block";
+        } else {
+            elementToShow.style.display = "none";
+        }
+    }
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+});
+
+const images = document.querySelector('slideshow-image');
+const slideshowSection = document.querySelector('#slideshow');
+
+class Carousel {
+
+    constructor(container, items){
+        this.carouselContainer = container;
+        this.carouselArray = [...items];
+    }
+}
+
 // Subscribe - button:
 const inputField = document.querySelector('.subscribe-input');
 const subscribeBtn = document.querySelector('.subscribe-btn');
