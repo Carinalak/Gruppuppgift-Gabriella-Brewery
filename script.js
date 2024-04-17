@@ -1,3 +1,16 @@
+//TITLE PAGE
+
+const titleImage = document.querySelector('.title-page-logo img');
+
+titleImage.addEventListener('click', scrollDown);
+
+function scrollDown() {
+    window.scrollBy({
+        top: window.innerHeight * 1,
+        behavior: 'smooth' 
+    });
+}
+
 //MENU
 
 let menuBtn = document.getElementById('menuBtn');
@@ -13,7 +26,6 @@ menuBtn.addEventListener('click', toggleDisplay);
 
 function toggleDisplay() {
     isMenuOpen = !isMenuOpen;
-
 
     if (isMenuOpen) {
         beanOne.classList.add('animateBean1');

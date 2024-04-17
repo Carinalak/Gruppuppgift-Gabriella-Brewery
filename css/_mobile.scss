@@ -2,6 +2,26 @@ body {
     background-color: #312418;
 }
 
+/* ****************    TITLE PAGE   **************** */
+.title-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #142815;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title-page-logo {
+    max-width: 100%;
+}
+
+.title-page-logo img {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
 /* ****************    MENU   **************** */
 .menu {
     position: fixed;
@@ -33,6 +53,7 @@ body {
     position: absolute;
     top: 0;
     right: 25;
+    cursor: pointer;
 }
 
 .menu-flexbox {
@@ -52,6 +73,14 @@ body {
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 400;
+    font-size: 64px;
+    transition: font-size 0.3s ease;
+}
+
+
+.menu-anchor:hover{
+    font-size: 72px;
+
 }
 
 .menu-kitty {
@@ -542,8 +571,6 @@ footer h3 {
     color: #F8E9D6; 
     outline: none;
     width: 250px;
-    height: 25px;
-    text-align: center;
 }
 
 .subscribe-input::placeholder {
@@ -552,9 +579,6 @@ footer h3 {
     text-align: center;
 }
 
-.subscribe-input:focus::placeholder {
-    color: transparent;
-}
 .subscribe-form {
     padding-top: 20px;
     padding-bottom: 20px;
