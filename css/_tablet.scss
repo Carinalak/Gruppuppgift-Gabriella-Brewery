@@ -48,27 +48,6 @@ body {
 }
 
 
-
-
-.brewing-methods-heading {
-    color: #F8E9D6;
-}
-
-.brewery-club-section {
-    grid-column: span 4;    
-}
-
-.book-image-container {
-    grid-column: span 4;
-    display: grid;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
-	gap: 10px;
-}
-
-.book-image {
-    grid-column: 1 / -1;
-    width: 100%;
-}
 /* ****************    COOKIE   **************** */
 
 .cookie-popup {
@@ -95,6 +74,27 @@ body {
     width: 80%;
 }
 
+
+
+.brewing-methods-heading {
+    color: #F8E9D6;
+}
+
+.brewery-club-section {
+    grid-column: span 4;    
+}
+
+.book-image-container {
+    grid-column: span 4;
+    display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 10px;
+}
+
+.book-image {
+    grid-column: 1 / -1;
+    width: 100%;
+}
 
 /* ------------------- ABOUT THE BEANS SECTION -------------------- */
 
