@@ -1,15 +1,25 @@
 body {
     background-color: #312418;
 }
+/* ****************    COOKIE   **************** */
 
+.cookie-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.decline-btn {
+    width: 200px;
+
+}
+.accept-btn {
+    width: 200px;
+}
 
 /* ****************   ABOUT THE BEANS SECTION  **************** */
-
 
 .about-beans-heading {
     color: #F8E9D6;
 }
-
 
 .about-beans-paragraph, .about-beans-paragraph2 {
     color: #F8E9D6;
@@ -18,7 +28,6 @@ body {
 
 
 /* *************** BREWERY CLUB SECTION ***************** */
-
 
 .brewery-club-section {
     margin-top: 20px;
