@@ -5,13 +5,20 @@ body {
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: 10px;
 }
+/* ****************    MENU   **************** */
 
 .menu-button {
     grid-column: span 4;
 }
 
 .menu {
-    grid-column: span 4;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.brown {
+    grid-column: 1 / 1;
+    background-color: #312418;
 }
 
 .brewing-methods-heading {
