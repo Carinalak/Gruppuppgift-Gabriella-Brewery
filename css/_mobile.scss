@@ -88,6 +88,25 @@ body {
         left: -100%; 
     }
 }
+/* ****************    COOKIE   **************** */
+.cookie-container {
+   // position: absolute;
+    //align-items: center;
+    position: sticky;
+}
+.cookie-popup {
+    z-index: 1100;
+    background-color: #684B30;
+    width: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #F8E9D6;
+    border-radius: 15px;
+    padding: 20px;
+    position: sticky;
+}
+
+
 
 /* ****************    BEANS ANIMATION   **************** */
 
