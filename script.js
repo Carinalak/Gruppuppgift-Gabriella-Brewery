@@ -39,11 +39,13 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentSlide = 0;
     let touchstartX = 0;
     let touchendX = 0;
+/*
+    function showSlide(slideIndex) {
+        slides.forEach(slide => slide.style.display = "none");
+        slides[slideIndex].style.display = "block";
+    }
+   */
 
-    //function showSlide(slideIndex) {
-     //   slides.forEach(slide => slide.style.display = "none");
-     //   slides[slideIndex].style.display = "block";
-   // }
     function adjustSlideLayout() {
         if (window.innerWidth > 700) {
             slides.forEach(slide => slide.style.display = "grid");
@@ -51,9 +53,12 @@ document.addEventListener("DOMContentLoaded", function() {
             function showSlide(slideIndex) {
                 slides.forEach(slide => slide.style.display = "none");
                 slides[slideIndex].style.display = "block";
-            }
+            } 
         }
+        showSlide(slideIndex);
     }
+    adjustSlideLayout();
+    
 
     function nextSlide() {
         currentSlide = (currentSlide + 1) % slides.length;
