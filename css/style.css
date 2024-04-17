@@ -310,18 +310,18 @@ template {
 }
 
 .subscribe-btn {
-  background-color: #F8E9D6;
-  color: #312418;
-  font-family: "Cormoran", serif;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  border-radius: 20px;
-  border-style: none;
-  width: 150px;
-  height: 48px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  margin-bottom: 20px;
+    background-color: #F8E9D6;
+    color: #312418;
+    font-family: 'Cormoran', serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border-style: none;
+    width: 150px;
+    height: 48px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .subscribe-btn:disabled,
@@ -339,34 +339,32 @@ template {
 }
 
 .subscribe-btn:active:not(:disabled):not(.disabled-hover) {
-  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(248, 233, 214, 0.25);
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(248, 233, 214, 0.25);
 }
 
 .flip-card-button {
-  font-family: "Cormoran", serif;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  top: 80%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150px;
-  height: 48px;
-  border-radius: 20px;
-  background-color: #F8E9D6;
-  border: 0;
-  color: #312418;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+    font-family: 'Cormoran', serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    top: 80%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 48px;
+    border-radius: 20px;
+    background-color: #F8E9D6;
+    border: 0;
+    color: #312418;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
-
 .flip-card-button:hover {
-  background: radial-gradient(ellipse at center, #FFFFFF 10%, #FFFFFF 40%, rgba(248, 233, 214, 0.793) 70%, rgba(248, 233, 214, 0.5) 100%);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background: radial-gradient(ellipse at center, #FFFFFF 10%, #FFFFFF 40%, rgba(248,233,214, 0.793) 70%, rgba(248,233,214, 0.5) 100%);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
 .flip-card-button:active {
-  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 h1 {
@@ -1027,12 +1025,32 @@ footer h3 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 10px;
   }
+
+  /* ****************    MENU   **************** */
   .menu-button {
     grid-column: span 4;
+    z-index: 999;
   }
   .menu {
-    grid-column: span 4;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    z-index: 998;
+    visibility: hidden;
   }
+  .menu-visible {
+    visibility: visible;
+  }
+  .brown {
+    grid-column: 1/1;
+    background-color: #312418;
+  }
+  .menu-kitty {
+    bottom: 20px;
+    right: 50px;
+    padding-left: 10px;
+  }
+  /* ******************************** */
+  
   .brewing-methods-heading {
     color: #F8E9D6;
   }
@@ -1708,4 +1726,6 @@ footer h3 {
     flex-direction: column;
     align-items: center;
   }
+
 }/*# sourceMappingURL=style.css.map */
+
