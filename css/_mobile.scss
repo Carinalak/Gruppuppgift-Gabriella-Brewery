@@ -98,32 +98,6 @@ body {
         left: -100%; 
     }
 }
-/* ****************    COOKIE   **************** */
-
-.cookie-popup {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1100;
-    background-color: #684B30;
-    width: 80%;
-    margin-left: 20px;
-    margin-right: 20px;
-    color: #F8E9D6;
-    border-radius: 15px;
-    padding: 20px;
-    margin-top: 200px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-.cookie-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 80%;
-}
-
 
 /* ****************    BEANS ANIMATION   **************** */
 
@@ -254,6 +228,33 @@ body {
     width: 100vw;
     z-index: 5;
 }
+/* ****************    COOKIE   **************** */
+
+.cookie-popup {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1100;
+    background-color: #684B30;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #F8E9D6;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.cookie-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+
+
 
 /* ****************   THE BREWERY CLUB SECTION  **************** */
 

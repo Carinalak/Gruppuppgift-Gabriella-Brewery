@@ -51,6 +51,22 @@ function toggleDisplay() {
     }
 }
 
+// ----------------- Cookie popup: ----------------------- //
+
+var declineBtn = document.getElementById('declineBtn');
+var acceptBtn = document.getElementById('acceptBtn');
+var cookiePopup = document.getElementById('cookiePopup');
+
+declineBtn.addEventListener('click', function() {
+    cookiePopup.style.display = 'none';
+});
+
+acceptBtn.addEventListener('click', function() {
+    cookiePopup.style.display = 'none';
+});
+
+
+
 //feature to be able to flip the coffee cards
   let cards = document.querySelectorAll('.flip-card');
 
