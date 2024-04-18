@@ -81,7 +81,6 @@ acceptBtn.addEventListener('click', function() {
 let nextBtn = document.querySelector('#nextBtn');
 let previousBtn = document.querySelector('#previousBtn');
 
-
 document.addEventListener("DOMContentLoaded", function() {
     const slides = document.querySelectorAll(".slideshow-slide");
     let currentSlide = 0;
@@ -153,7 +152,26 @@ document.addEventListener("DOMContentLoaded", function() {
     showSlide(currentSlide);
 });
 
+function adjustSlideLayout() {
+    const slideshowDotsElements = document.querySelectorAll(".slideshow-dots");
+    
+    if (window.innerWidth > 700) {
+        slideshowDotsElements.forEach(dot => {
+            dot.style.position = "static";
+            dot.style.display = "none";
 
+        });
+    } else {
+        slideshowDotsElements.forEach(dot => {
+            dot.style.position = "";
+            dot.style.display = "";
+        });
+    }
+}
+
+window.addEventListener("resize", adjustSlideLayout);
+
+adjustSlideLayout();
 
 // // SLIDESHOW TABLET
 
