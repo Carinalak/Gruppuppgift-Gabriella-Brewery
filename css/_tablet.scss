@@ -490,7 +490,6 @@ body {
 }
 */
 
-
 .slideshow-buttons-container {
     grid-column: 1 / -1;
     display: grid;
@@ -521,13 +520,6 @@ body {
 }
 
 
-
-.nextBtn, .previousBtn {
-    width: 100px;
-    background: transparent;
-    border-style: none;
-    color: #F8E9D6;
-} 
 
 .slideshow-buttons-container .material-symbols-outlined {
     font-size: 100px;
