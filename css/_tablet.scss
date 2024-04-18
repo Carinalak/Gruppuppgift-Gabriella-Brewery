@@ -485,6 +485,23 @@ body {
     
 }
 */
+
+// .slideshow-buttons-container {
+//     display: grid;
+//     grid-column: 1 / span 4;
+//     width: 100%;
+// }
+
+.nextBtn, .previousBtn {
+    width: 100px;
+    background: transparent;
+    border-style: none;
+    color: #F8E9D6;
+} 
+
+.slideshow-buttons-container .material-symbols-outlined {
+    font-size: 100px;
+}
 /* *********************  FOOTER   ********************* */
 
 footer {

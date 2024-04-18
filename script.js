@@ -78,31 +78,34 @@ acceptBtn.addEventListener('click', function() {
 
 
 // SLIDESHOW - OUR CAFÉ PICKS SECTION
+let nextBtn = document.querySelector('#nextBtn');
+let previousBtn = document.querySelector('#previousBtn');
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const slides = document.querySelectorAll(".slideshow-slide");
     let currentSlide = 0;
     let touchstartX = 0;
     let touchendX = 0;
-/*
+
     function showSlide(slideIndex) {
         slides.forEach(slide => slide.style.display = "none");
         slides[slideIndex].style.display = "block";
     }
-   */
 
-    function adjustSlideLayout() {
-        if (window.innerWidth > 700) {
-            slides.forEach(slide => slide.style.display = "grid");
-        } else {
-            function showSlide(slideIndex) {
-                slides.forEach(slide => slide.style.display = "none");
-                slides[slideIndex].style.display = "block";
-            } 
-        }
-        showSlide(slideIndex);
-    }
-    adjustSlideLayout();
+
+    // function adjustSlideLayout() {
+    //     if (window.innerWidth > 700) {
+    //         slides.forEach(slide => slide.style.display = "grid");
+    //     } else {
+    //         function showSlide(slideIndex) {
+    //             slides.forEach(slide => slide.style.display = "none");
+    //             slides[slideIndex].style.display = "block";
+    //         } 
+    //     }
+    //     showSlide(slideIndex);
+    // }
+    // adjustSlideLayout();
     
 
     function nextSlide() {
@@ -111,11 +114,16 @@ document.addEventListener("DOMContentLoaded", function() {
         updateDots();   
     }
 
+    nextBtn.addEventListener("click", nextSlide);
+
+
     function prevSlide() {
         currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         showSlide(currentSlide);
         updateDots();
     }
+
+    previousBtn.addEventListener("click", prevSlide);
 
     function updateDots() {
         const dots = slides[currentSlide].querySelectorAll(".dot");
@@ -144,6 +152,35 @@ document.addEventListener("DOMContentLoaded", function() {
     updateDots();
     showSlide(currentSlide);
 });
+
+
+
+// // SLIDESHOW TABLET
+
+// document.addEventListener("DOMContentLoaded", function() {
+
+//     function checkScreenSize() {
+//         if (window.innerWidth > 700) {
+//             elementToShow.style.display = "block";
+//         } else {
+//             elementToShow.style.display = "none";
+//         }
+//     }
+
+//     checkScreenSize();
+//     window.addEventListener("resize", checkScreenSize);
+// });
+
+// const images = document.querySelector('slideshow-image');
+// const slideshowSection = document.querySelector('#slideshow');
+
+// class Carousel {
+
+//     constructor(container, items){
+//         this.carouselContainer = container;
+//         this.carouselArray = [...items];
+//     }
+// }
 
 // Subscribe - button:
 const inputField = document.querySelector('.subscribe-input');
