@@ -260,14 +260,12 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
-    margin-right: 10;
     .brewing-methods-heading {
         font-size: 64px;
         color:  #F8E9D6;
         grid-column: 1 / span 12;
         grid-row: 1;
-        margin-left: 0;
-        margin-left: 10px;
+        margin-left: 20px;
     }
     .method-container {
         display: grid;
