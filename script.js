@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function showSlide(slideIndex) {
         slides.forEach(slide => slide.style.display = "none");
-        slides[slideIndex].style.display = "block";
+        slides[slideIndex].style.display = "grid";
     }
 
 
