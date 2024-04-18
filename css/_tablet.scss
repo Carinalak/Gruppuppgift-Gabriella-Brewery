@@ -423,6 +423,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 10px; 
+    margin-left: 10px;
     h2 {
         display: grid;
         grid-column: 1 / span 4;
@@ -497,7 +498,7 @@ body {
         background: transparent;
         border-style: none;
         color: #F8E9D6;
-        left: 26%;
+        left: 27%;
     }
 }
 
