@@ -1,15 +1,25 @@
 body {
     background-color: #312418;
 }
+/* ****************    COOKIE   **************** */
 
+.cookie-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.decline-btn {
+    width: 200px;
+
+}
+.accept-btn {
+    width: 200px;
+}
 
 /* ****************   ABOUT THE BEANS SECTION  **************** */
-
 
 .about-beans-heading {
     color: #F8E9D6;
 }
-
 
 .about-beans-paragraph, .about-beans-paragraph2 {
     color: #F8E9D6;
@@ -18,7 +28,6 @@ body {
 
 
 /* *************** BREWERY CLUB SECTION ***************** */
-
 
 .brewery-club-section {
     margin-top: 20px;
@@ -35,8 +44,6 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, auto);
     grid-gap: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 .brewery-club-heading-both {
     grid-column: span 6;
@@ -252,73 +259,75 @@ body {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, auto);
     grid-gap: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
+    .brewing-methods-heading {
+        font-size: 64px;
+        color:  #F8E9D6;
+        grid-column: 1 / span 12;
+        grid-row: 1;
+        margin-left: 20px;
+    }
+    .method-container {
+        display: grid;
+        grid-column: span 4;
+        grid-row: span 6;
+        margin-top: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        .method-heading {
+            grid-column: 1 / span 4;
+            grid-row: 2;
+            margin-left: 10px;
+            margin-right: 0;
+            margin-top: 40px;
+        }
+        .method-image-container {
+            justify-content: flex-start;
+            align-self: start;
+            align-items: start;
+            grid-column: 1 / span 4;
+            grid-row: 3;
+            margin: 0 auto;
+            display: grid;
+            .method-image {
+                vertical-align: top;
+                justify-content: flex-start;
+                width: 400px;
+                height: 450px;
+                object-fit: cover;
+                grid-column: span 4;
+                grid-row: 3;
+            }
+        }
+        .information-container {
+            display: grid;
+            grid-template-rows: repeat(6, auto);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            grid-column: 1 / span 4;
+            grid-row: 4;
+            margin-right: 10px;
+            margin-left: 10px;
+            .method-subheading {
+                grid-column: 1 / span 4;
+                grid-row: 1;
+                margin-left: 10px;
+                margin-right: 10px;
+                color: #F8E9D6;
+            }
+            .method-information {
+                grid-column: 1 / span 4;
+                grid-row: 2;
+                margin-left: 10px;
+                margin-right: 0;
+                color: #F8E9D6;
+            }
+        }
+    }
 }
-
-
-.brewing-methods-heading {
-    font-size: 64px;
-    color:  #F8E9D6;
-    grid-column: span 12;
-    grid-row: 1;
-}
-
-
-.method-container, .information-container, .method-heading, .method-subheading, .method-information {
-    grid-column: span 4;
-    grid-row: span 1;
-}
-
-
-.method-container {
-    margin-top: 0;
-    margin-left: 0;
-}
-
-
-.method-image-container, .method-image {
-    justify-content: flex-start;
-}
-
-
-.method-information, .method-subheading, .method-heading {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-
-.information-container {
-    margin-right: 0;
-}
-
-
-.method-heading {
-    margin-top: 50px;
-}
-
-
-.method-image-container {
-    grid-column: span 5;
-    grid-row: 2;
-}
-
-
-.method-image {
-    width: 400px;
-    height: 450px;
-    object-fit: cover;
-}
-
-
-
-
-.method-subheading, .method-information {
-    color: #F8E9D6;
-}
-
 
 
 /* *********************  FOOTER   ********************* */
@@ -378,5 +387,4 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
 
