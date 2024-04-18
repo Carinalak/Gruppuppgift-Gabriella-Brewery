@@ -44,8 +44,6 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, auto);
     grid-gap: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 .brewery-club-heading-both {
     grid-column: span 6;
@@ -262,14 +260,12 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
     .brewing-methods-heading {
         font-size: 64px;
         color:  #F8E9D6;
         grid-column: 1 / span 12;
         grid-row: 1;
-        margin-left: 0;
+        margin-left: 20px;
     }
     .method-container {
         display: grid;
