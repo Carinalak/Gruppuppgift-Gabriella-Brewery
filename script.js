@@ -1,3 +1,16 @@
+//TITLE PAGE
+
+const titleImage = document.querySelector('.title-page-logo img');
+
+titleImage.addEventListener('click', scrollDown);
+
+function scrollDown() {
+    window.scrollBy({
+        top: window.innerHeight * 1,
+        behavior: 'smooth' 
+    });
+}
+
 //MENU
 
 let menuBtn = document.getElementById('menuBtn');
@@ -12,15 +25,47 @@ let isMenuOpen = false;
 menuBtn.addEventListener('click', toggleDisplay);
 
 function toggleDisplay() {
+    isMenuOpen = !isMenuOpen;
 
-    menu.classList.toggle('menu-visible');
+    if (isMenuOpen) {
+        beanOne.classList.add('animateBean1');
+        beanTwo.classList.add('animateBean2');
+        beanThree.classList.add('animateBean3');
+        menu.classList.add('menu-visible');
+        beanOne.classList.remove('deAnimateBean1');
+        beanTwo.classList.remove('deAnimateBean2');
+        beanThree.classList.remove('deAnimateBean3');
+        menu.classList.remove('menu-slideOut');
+    } else {
+        beanOne.classList.remove('animateBean1');
+        beanTwo.classList.remove('animateBean2');
+        beanThree.classList.remove('animateBean3');
+        beanOne.classList.add('deAnimateBean1');
+        beanTwo.classList.add('deAnimateBean2');
+        beanThree.classList.add('deAnimateBean3');
+        menu.classList.add('menu-slideOut');
 
-    beanOne.classList.toggle('animateBean1');
-    beanTwo.classList.toggle('animateBean2');
-    beanThree.classList.toggle('animateBean3');
+        setTimeout(() => {
+            menu.classList.remove('menu-visible');
+        }, 500);
+    }
+}
+
+// ----------------- Cookie popup: ----------------------- //
+
+var declineBtn = document.getElementById('declineBtn');
+var acceptBtn = document.getElementById('acceptBtn');
+var cookiePopup = document.getElementById('cookiePopup');
+
+declineBtn.addEventListener('click', function() {
+    cookiePopup.style.display = 'none';
+});
+
+acceptBtn.addEventListener('click', function() {
+    cookiePopup.style.display = 'none';
+});
 
 
-  }
 
 //feature to be able to flip the coffee cards
   let cards = document.querySelectorAll('.flip-card');
@@ -39,11 +84,26 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentSlide = 0;
     let touchstartX = 0;
     let touchendX = 0;
-
+/*
     function showSlide(slideIndex) {
         slides.forEach(slide => slide.style.display = "none");
         slides[slideIndex].style.display = "block";
     }
+   */
+
+    function adjustSlideLayout() {
+        if (window.innerWidth > 700) {
+            slides.forEach(slide => slide.style.display = "grid");
+        } else {
+            function showSlide(slideIndex) {
+                slides.forEach(slide => slide.style.display = "none");
+                slides[slideIndex].style.display = "block";
+            } 
+        }
+        showSlide(slideIndex);
+    }
+    adjustSlideLayout();
+    
 
     function nextSlide() {
         currentSlide = (currentSlide + 1) % slides.length;

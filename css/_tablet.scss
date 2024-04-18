@@ -5,34 +5,82 @@ body {
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: 10px;
 }
+/* ****************    MENU   **************** */
 
 .menu-button {
     grid-column: span 4;
+    z-index: 999;
 }
 
 .menu {
-    grid-column: span 4;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    z-index: 998;
+    visibility: hidden;
 }
+
+.menu-visible {
+    visibility: visible;
+}
+
+
+.brown {
+    grid-column: 1 / 1;
+    background-color: #312418;
+}
+
+.menu-kitty {
+    bottom: 20px;
+    right: 50px;
+    padding-left: 10px;
+}
+
+/* ******************************** */
+
+.header {
+    position: sticky;
+    grid-column: 1 / 1;
+    background: rgb(49,36,24);
+    background: linear-gradient(0deg, rgba(49,36,24,1) 0%, rgba(255,255,255,1) 100%);
+    height: 120px;
+    width: 100vw;
+    z-index: 5;
+}
+
+
+/* ****************    COOKIE   **************** */
+
+.cookie-container {
+    display: grid;
+    grid-column: span 4;
+    width: 95%;
+}
+.decline-btn {
+    width: 160px;
+}
+.accept-btn {
+    width: 160px;
+}
+
+/* ****************    BREWING METHODS   **************** */
 
 .brewing-methods-heading {
     color: #F8E9D6;
 }
-
 .brewery-club-section {
     grid-column: span 4;    
 }
-
 .book-image-container {
     grid-column: span 4;
     display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: 10px;
 }
-
 .book-image {
     grid-column: 1 / -1;
     width: 100%;
 }
+
 
 
 /* ------------------- ABOUT THE BEANS SECTION -------------------- */
@@ -375,46 +423,67 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2;
     gap: 10px; 
-
+}
+.slideshow-section h2 {
+    display: grid;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    text-align: left;
+}
+.slideshow-slide {
+    display: grid;
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1;
+    gap: 10px; 
+    .slideshow-image-container {
+        display: grid;
+        grid-column: 2 / span 3; 
+        grid-row: 1 / span 1;        
+        
+    }
+    .slideshow-text {
+        display: grid;
+        grid-column: 1 / span 1; 
+        grid-row: 1 / span 1; 
+        align-items: start;
         width: 100%; max-width: 100%;
         overflow: hidden;
         margin: auto;
         position: relative;
-        h2 {
-            color: #F8E9D6;
-            font-size: 64px;
-            font-weight: 300;
-            text-align: center;
-            grid-column: 1 / span 4; 
-            grid-row: 1;
-            text-align: left;
-            margin-left: 40px;
-        }
-        .slideshow-slide {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 2;
-            gap: 10px; 
-            grid-column: 2 / span 3;
-            grid-row: 2;
-            .slideshow-image-container {
-                grid-column: 2 / span 3; 
-                grid-row: 2;
-            }
-            .slideshow-text {
-                grid-column: 1 / span 1; 
-                grid-row: 2; 
-                align-items: start;
-            }
-        }
-    
+        margin-top: 0;
+    h2 {
+        color: #F8E9D6;
+        font-size: 64px;
+        font-weight: 300;
+        text-align: center;
+        text-align: left;
+        margin-left: 40px;
+    }
+    }
 }
-
 .image-container img {
     width: 100%;
     height: auto;
+    
 }
-
+/*
+.text {
+    width: 100%; max-width: 100%;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    h2 {
+        color: #F8E9D6;
+        font-size: 64px;
+        font-weight: 300;
+        text-align: center;
+        text-align: left;
+        margin-left: 40px;
+    }
+    
+}
 
 // .slideshow-section {
 //     display: flex;
