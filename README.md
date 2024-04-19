@@ -19,7 +19,7 @@ De som gjort designen är: Amanda Hansson, Diem Bang, Mustafa Mehdi och Victoria
 ![The Design - Mobile](assets/screenshots-design/mobile/cafe-footer-mobile.png)  
 
 
-### tablet version:
+### Tablet version:
 ![The Design - Tablet](assets/screenshots-design/tablet/logo-cookies-tablet.png)  
 ![The Design - Tablet](assets/screenshots-design/tablet/menu-tablet.png)  
 ![The Design - Tablet](assets/screenshots-design/tablet/home-tablet.png)  
@@ -30,11 +30,40 @@ De som gjort designen är: Amanda Hansson, Diem Bang, Mustafa Mehdi och Victoria
 
 
 ### Desktop version:
+![The Design - Desktop](assets/screenshots-design/desktop/logo-cookies-desktop.png)  
+![The Design - Desktop](assets/screenshots-design/desktop/menu-desktop.png)  
+![The Design - Desktop](assets/screenshots-design/desktop/home-desktop.png)  
+![The Design - Desktop](assets/screenshots-design/desktop/brewing-desktop.png)  
+![The Design - Desktop](assets/screenshots-design/desktop/beans-desktop.png)  
+![The Design - Desktop](assets/screenshots-design/desktop/cafes-footer-desktop.png)  
+
+
 
 ## Skärmdumpar på Resultatet:
 
+### Mobil version:
+
+![The Web - Mobile](assets/screenshots-web/mobile/mobile1.png)  
+![The Web - Mobile](assets/screenshots-web/mobile/mobile2.png)  
+![The Web - Mobile](assets/screenshots-web/mobile/mobile3.png)  
+![The Web - Mobile](assets/screenshots-web/mobile/mobile4.png)  
+![The Web - Mobile](assets/screenshots-web/mobile/mobile5.png)  
+![The Web - Mobile](assets/screenshots-web/mobile/mobile6.png)  
+![The Web - Mobile](assets/screenshots-web/mobile/mobile7.png)  
+
+### Tablet version:
+
+![The Web - Tablet](assets/screenshots-web/tablet/tablet1.png)  
+![The Web - Tablet](assets/screenshots-web/tablet/tablet2.png)  
+![The Web - Tablet](assets/screenshots-web/tablet/tablet3.png)  
+![The Web - Tablet](assets/screenshots-web/tablet/tablet4.png)  
+![The Web - Tablet](assets/screenshots-web/tablet/tablet5.png)  
+![The Web - Tablet](assets/screenshots-web/tablet/tablet6.png)  
+![The Web - Tablet](assets/screenshots-web/tablet/tablet7.png)  
 
 
+
+### Desktop version:
 
 
 
