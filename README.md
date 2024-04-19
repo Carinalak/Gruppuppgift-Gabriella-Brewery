@@ -1,16 +1,29 @@
-# THE BREWING CLUB
+# THE BREWERY CLUB
 
-De här projektet är ett samarbete mellan två grupper. Den ena gjorde designen i Figma, och den andra kodade sidan.
+The Brewery Club är en webbapplikation som är en visuell hyllning till konsten av kaffebryggning och den mysiga atmosfären av att vara hemma. Genom en samverkan mellan vår kodgrupp och designgruppen strävar vi efter att erbjuda en användarupplevelse som balanserar det jordnära och det förfinade. Dessutom erbjuder den en uppslukande upplevelse med roliga animationer och visuella element som förstärker den kreativa och hantverksmässiga känslan av att brygga kaffe.
+Det här projektet är ett samarbete mellan två grupper - den ena gjorde designen i Figma, och den andra kodade sidan.
 De som gjort designen är: Amanda Hansson, Diem Bang, Mustafa Mehdi och Victoria Lundberg (gruppen Gabriella). Vi som kodat projektet är: Rebecka Göthlin, Helena Skagerlid, Carina Lakosil och Augustine Al-Zebary (gruppen Glory).
 
-### Verktyg: 🔧
-- SASS
-- Vanilla JavaScript
+
+### 🔧 Verktyg: 
+
+`Frontend`:
+
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+
+`Design`:
+
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 
-## Skärmdumpar på designen vi fick:
 
-### Mobil version:
+## 📷 Skärmdumpar på designen vi fick:
+
+### 📱 Mobil-version:
 ![The Design - Mobile](assets/screenshots-design/mobile/logo-cookies-mobile.png)  
 ![The Design - Mobile](assets/screenshots-design/mobile/menu-mobile.png)  
 ![The Design - Mobile](assets/screenshots-design/mobile/brewing-mobile.png)  
@@ -19,7 +32,7 @@ De som gjort designen är: Amanda Hansson, Diem Bang, Mustafa Mehdi och Victoria
 ![The Design - Mobile](assets/screenshots-design/mobile/cafe-footer-mobile.png)  
 
 
-### Tablet version:
+### 📱 Tablet-version:
 ![The Design - Tablet](assets/screenshots-design/tablet/logo-cookies-tablet.png)  
 ![The Design - Tablet](assets/screenshots-design/tablet/menu-tablet.png)  
 ![The Design - Tablet](assets/screenshots-design/tablet/home-tablet.png)  
@@ -29,7 +42,7 @@ De som gjort designen är: Amanda Hansson, Diem Bang, Mustafa Mehdi och Victoria
 
 
 
-### Desktop version:
+### 🖥️ Desktop-version:
 ![The Design - Desktop](assets/screenshots-design/desktop/logo-cookies-desktop.png)  
 ![The Design - Desktop](assets/screenshots-design/desktop/menu-desktop.png)  
 ![The Design - Desktop](assets/screenshots-design/desktop/home-desktop.png)  
@@ -39,9 +52,9 @@ De som gjort designen är: Amanda Hansson, Diem Bang, Mustafa Mehdi och Victoria
 
 
 
-## Skärmdumpar på Resultatet:
+## 📷 Skärmdumpar på Resultatet:
 
-### Mobil version:
+### 📱 Mobil-version:
 
 ![The Web - Mobile](assets/screenshots-web/mobile/mobile1.png)  
 ![The Web - Mobile](assets/screenshots-web/mobile/mobile2.png)  
@@ -51,7 +64,7 @@ De som gjort designen är: Amanda Hansson, Diem Bang, Mustafa Mehdi och Victoria
 ![The Web - Mobile](assets/screenshots-web/mobile/mobile6.png)  
 ![The Web - Mobile](assets/screenshots-web/mobile/mobile7.png)  
 
-### Tablet version:
+### 📱 Tablet-version:
 
 ![The Web - Tablet](assets/screenshots-web/tablet/tablet1.png)  
 ![The Web - Tablet](assets/screenshots-web/tablet/tablet2.png)  
@@ -63,7 +76,7 @@ De som gjort designen är: Amanda Hansson, Diem Bang, Mustafa Mehdi och Victoria
 
 
 
-### Desktop version:
+### 🖥️ Desktop-version:
 
 
 
