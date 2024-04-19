@@ -1,10 +1,13 @@
 # THE BREWING CLUB
+
 De här projektet är ett samarbete mellan två grupper. Den ena gjorde designen i Figma, och den andra kodade sidan.
 De som gjort designen är: Amanda Hansson, Diem Bang, Mustafa Mehdi och Victoria Lundberg (gruppen Gabriella). Vi som kodat projektet är: Rebecka Göthlin, Helena Skagerlid, Carina Lakosil och Augustine Al-Zebary (gruppen Glory).
 
 ### Verktyg: 🔧
 - SASS
 - Vanilla JavaScript
+
+
 
 
 
