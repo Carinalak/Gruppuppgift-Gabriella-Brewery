@@ -78,7 +78,7 @@ De som gjort designen är: Amanda Hansson, Diem Bang, Mustafa Mehdi och Victoria
 
 ### 🖥️ Desktop-version:
 
-
+![The Web - desktop](assets/screenshots-web/desktop/desktop1.png) 
 
 
 
