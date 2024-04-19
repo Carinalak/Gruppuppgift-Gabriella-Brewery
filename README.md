@@ -8,6 +8,32 @@ De som gjort designen är: Amanda Hansson, Diem Bang, Mustafa Mehdi och Victoria
 - Vanilla JavaScript
 
 
+## Skärmdumpar på designen vi fick:
+
+### Mobil version:
+![The Design - Mobile](assets/screenshots-design/mobile/logo-cookies-mobile.png)  
+![The Design - Mobile](assets/screenshots-design/mobile/menu-mobile.png)  
+![The Design - Mobile](assets/screenshots-design/mobile/brewing-mobile.png)  
+![The Design - Mobile](assets/screenshots-design/mobile/home-mobile.png)  
+![The Design - Mobile](assets/screenshots-design/mobile/beans-mobile.png)  
+![The Design - Mobile](assets/screenshots-design/mobile/cafe-footer-mobile.png)  
+
+
+### tablet version:
+![The Design - Tablet](assets/screenshots-design/tablet/logo-cookies-tablet.png)  
+![The Design - Tablet](assets/screenshots-design/tablet/menu-tablet.png)  
+![The Design - Tablet](assets/screenshots-design/tablet/home-tablet.png)  
+![The Design - Tablet](assets/screenshots-design/tablet/brewing-tablet.png)  
+![The Design - Tablet](assets/screenshots-design/tablet/beans-tablet.png)  
+![The Design - Tablet](assets/screenshots-design/tablet/cafe-footer-tablet.png)  
+
+
+
+### Desktop version:
+
+## Skärmdumpar på Resultatet:
+
+
 
 
 
