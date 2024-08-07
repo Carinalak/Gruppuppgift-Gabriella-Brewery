@@ -1,3 +1,5 @@
+Se sidan här: https://carinalak.github.io/Gruppuppgift-Gabriella-Brewery/
+
 # THE BREWERY CLUB
 
 The Brewery Club är en webbapplikation som är en visuell hyllning till konsten av kaffebryggning och den mysiga atmosfären av att vara hemma. Genom en samverkan mellan vår kodgrupp och designgruppen strävar vi efter att erbjuda en användarupplevelse som balanserar det jordnära och det förfinade. Dessutom erbjuder den en uppslukande upplevelse med roliga animationer och visuella element som förstärker den kreativa och hantverksmässiga känslan av att brygga kaffe.
